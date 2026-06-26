@@ -1,0 +1,213 @@
+{
+  "main": {
+    "id": "d3994a2f5672880f",
+    "type": "split",
+    "children": [
+      {
+        "id": "7667e195a469e81b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c4110d4b49c43d05",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Decision/google-calendar-classification-decision.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "google-calendar-classification-decision"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "16e84c9eed7b83e9",
+    "type": "split",
+    "children": [
+      {
+        "id": "49ad5a78abeafee6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7cde80804a3b3f72",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabeticalReverse",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "ファイルエクスプローラ"
+            }
+          },
+          {
+            "id": "0b50f3656939dda2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "検索"
+            }
+          },
+          {
+            "id": "1400ad7335c67233",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "ブックマーク"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 214.50090408325195
+  },
+  "right": {
+    "id": "bf8db36a8fb7e0ad",
+    "type": "split",
+    "children": [
+      {
+        "id": "98d19867b3122baa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "88b8b5728043b62b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Welcome"
+            }
+          },
+          {
+            "id": "de78b6d5156795bb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "9282523f9f8177c7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "9809f65e066a5240",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Welcome"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:新規ベースを作成": false,
+      "switcher:クイックスイッチャーを開く": false,
+      "graph:グラフビューを開く": false,
+      "canvas:新規キャンバスを作成": false,
+      "daily-notes:今日のデイリーノートを開く": false,
+      "templates:テンプレートを挿入": false,
+      "command-palette:コマンドパレットを開く": false,
+      "remotely-save:Remotely Save": false
+    }
+  },
+  "active": "7cde80804a3b3f72",
+  "lastOpenFiles": [
+    "Decision/notion-cache-deletion-decision.md",
+    "Decision/priority-decision-research-pc-first.md",
+    "Decision/obsidian-notion-sync-process.md",
+    "Decision/notion-startup-method.md",
+    "Decision/notion-daily-log-update.md",
+    "Daily/2025-09-27.md",
+    "Knowledge/トークン節約.md",
+    "desktop.ini",
+    "zotero-library.json/desktop.ini",
+    "Logs/desktop.ini",
+    "Templates/desktop.ini",
+    "Decision/desktop.ini",
+    "Knowledge/desktop.ini",
+    "Mistakes/desktop.ini",
+    "Projects/desktop.ini",
+    "Preferences/desktop.ini",
+    "Body/desktop.ini",
+    "Zotero/Zur Elektronentheorie der Metalle - Drude - 1900 - Annalen der Physik - Wiley On.md",
+    "Zotero/Ultrasensitive photoelectrochemical biosensor for DNA 5-methylcytosine analysis.md",
+    "Zotero/Methylated circulating tumor DNA in hepatocellular carcinoma A comprehensive ana.md",
+    "Zotero/Electron beam lithography on nonplanar and irregular surfaces.md",
+    "Zotero/A strategy to fabricate nanostructures with sub-nanometer line edge roughness.md",
+    "Zotero/3D matrixed DNA self-nanocatalyzer as electrochemical sensitizers for ultrasensi.md",
+    "Zotero/Lasing action in strongly coupled plasmonic nanocavity arrays.md",
+    "Zotero/Label-Free Optical Imaging of Nanoscale Single Entities.md",
+    "Zotero/5-Hydroxymethylcytosine Far Beyond the Intermediate of DNA Demethylation.md",
+    "Zotero/Dynamic Shadowing Growth and Its Energy Applications.md",
+    "Zotero/Study the protein concentration and temperature by photonic crystal structure.md",
+    "Zotero/Selective loss of 5hmC promotes neurodegeneration in the mouse model of Alzheime.md",
+    "Zotero/Metasurface-tuned light-matter interactions for high-performance photodetectors.md",
+    "Zotero/Label-Free and Sequence-Independent Isothermal Amplification Strategy for the Si.md",
+    "Zotero/Exploration of the mechanism of 5-Methylcytosine promoting the progression of he.md",
+    "Zotero/Direct sequencing of DNA 5-methylcytosine by engineered dioxygenase NTET-assiste.md",
+    "Zotero/Digital Bioassays Theory, Applications, and Perspectives.md",
+    "Zotero/Development of techniques for DNA-methylation analysis.md",
+    "Zotero/A compartment-free digital plasmonic coupling assay via single-particle imaging.md",
+    "無題のファイル.canvas"
+  ]
+}

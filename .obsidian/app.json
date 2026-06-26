@@ -1,8 +1,3 @@
 {
-  "legacyEditor": false,
-  "livePreview": true,
-  "defaultViewMode": "source",
-  "foldHeading": true,
-  "foldIndent": true,
-  "showFrontmatter": false
+  "promptDelete": false
 }
