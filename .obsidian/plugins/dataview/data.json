@@ -1,0 +1,18 @@
+{
+  "enableDataviewJs": true,
+  "enableInlineDataview": true,
+  "enableInlineDataviewJs": true,
+  "prettyRenderInlineFields": true,
+  "renderNullAs": "\\-",
+  "warnOnEmptyResult": true,
+  "refreshInterval": 2500,
+  "defaultDateFormat": "YYYY-MM-DD",
+  "defaultDateTimeFormat": "YYYY-MM-DD HH:mm",
+  "maxRecursiveRenderDepth": 4,
+  "tableIdColumnName": "ファイル",
+  "tableGroupColumnName": "グループ",
+  "showResultCount": true,
+  "allowHtml": true,
+  "inlineQueryPrefix": "=",
+  "inlineJsQueryPrefix": "$="
+}

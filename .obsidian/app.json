@@ -4,5 +4,18 @@
   "defaultViewMode": "source",
   "foldHeading": true,
   "foldIndent": true,
-  "showFrontmatter": false
+  "showFrontmatter": false,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "Inbox",
+  "attachmentFolderPath": "Resources/Attachments",
+  "spellcheck": false,
+  "spellcheckLanguages": ["ja"],
+  "readableLineLength": true,
+  "strictLineBreaks": false,
+  "showLineNumber": false,
+  "vimMode": false,
+  "translucency": false,
+  "nativeMenus": true,
+  "useMarkdownLinks": false,
+  "promptDelete": true
 }

@@ -1,0 +1,26 @@
+{
+  "command_timeout": 5,
+  "enable_folder_templates": true,
+  "enable_ribbon_icon": true,
+  "enable_system_commands": false,
+  "folder_templates": [
+    {
+      "folder": "Daily",
+      "template": "Templates/Daily Note Template"
+    },
+    {
+      "folder": "Notes/Permanent",
+      "template": "Templates/Permanent Note Template"
+    },
+    {
+      "folder": "Notes/Literature",
+      "template": "Templates/Literature Note Template"
+    },
+    {
+      "folder": "Projects",
+      "template": "Templates/Project Template"
+    }
+  ],
+  "templates_folder": "Templates",
+  "trigger_on_file_creation": true
+}

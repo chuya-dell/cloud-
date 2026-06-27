@@ -1,0 +1,28 @@
+{
+  "api_key": "",
+  "engine": "claude-sonnet-4-6",
+  "max_tokens": 2000,
+  "temperature": 0.7,
+  "frequency_penalty": 0.5,
+  "prompt_prefix": "",
+  "prompt_suffix": "",
+  "generateAtCursor": true,
+  "showStatusBar": true,
+  "outputToBlockquote": false,
+  "models": [
+    {
+      "id": "claude-sonnet-4-6",
+      "name": "Claude Sonnet 4.6",
+      "description": "Anthropic Claude (recommended)"
+    }
+  ],
+  "context": {
+    "includeTitle": true,
+    "includeFrontmatter": true,
+    "includeHeadings": true,
+    "includeContent": true,
+    "includeHighlights": true,
+    "includeMentions": false,
+    "includeCurrentNote": true
+  }
+}
