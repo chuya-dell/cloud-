@@ -1,5 +1,7 @@
 # 研究室PC環境構築手順
 
+> Notion: https://app.notion.com/p/386e390406d181a69c5adfd9154385fc
+
 このPCと同じClaude Code環境を別のWindowsPC（研究室PC）に作る手順。
 
 ## 前提
@@ -27,7 +29,6 @@ npm install -g @anthropic-ai/claude-code
 ---
 
 ## 2. Pythonライブラリのインストール
-
 ```
 pip install anthropic json-repair
 ```
@@ -36,7 +37,7 @@ pip install anthropic json-repair
 
 ## 3. MCP設定（Obsidian Vault接続）
 
-以下のファイルを作成・編集：
+以下のファイルを作成・編集：  
 `C:\Users\[ユーザー名]\AppData\Roaming\Claude\claude_desktop_config.json`
 
 ```json
@@ -53,7 +54,7 @@ pip install anthropic json-repair
 }
 ```
 
-※ `[ユーザー名]` は実際のWindowsユーザー名に変更する。
+※ `[ユーザー名]` は実際のWindowsユーザー名に変更する。  
 ※ server-filesystemは `npm install -g @modelcontextprotocol/server-filesystem` でインストール。
 
 ---
@@ -79,14 +80,14 @@ $settings2 = New-ScheduledTaskSettingsSet -StartWhenAvailable
 Register-ScheduledTask -TaskName "ProcessLogsToObsidian" -Action $action2 -Trigger $trigger2 -Settings $settings2 -RunLevel Highest -Force
 ```
 
-※ `$python` のパスはPythonのインストール先に合わせて変更する。
+※ `$python` のパスはPythonのインストール先に合わせて変更する。  
 ※ `where python` コマンドでパスを確認できる。
 
 ---
 
 ## 5. config.envのAPIキー設定
 
-`G:\マイドライブ\Claude\セッション\config.env` にAnthropicのAPIキーが必要。
+`G:\マイドライブ\Claude\セッション\config.env` にAnthropicのAPIキーが必要。  
 このファイルはGoogle Drive経由で共有されるので、自動的に使える。
 
 ---
@@ -102,7 +103,6 @@ schtasks /Run /TN "ProcessLogsToObsidian"
 ---
 
 ## 注意事項（このPCで学んだこと）
-
 - タスクスケジューラは `python` ではなくフルパスを使う（PATHが通らない）
 - バッチファイルはShift-JIS（CP932）で保存する
 - タスクの変更には管理者権限が必要
