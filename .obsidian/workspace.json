@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7667e195a469e81b",
+        "id": "c64fc5dd0172bc0b",
         "type": "tabs",
         "children": [
           {
-            "id": "c4110d4b49c43d05",
+            "id": "7f5ba2ebf77f169e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Decision/google-calendar-classification-decision.md",
+                "file": "Notes/サブスク管理.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "google-calendar-classification-decision"
+              "title": "サブスク管理"
             }
           }
         ]
@@ -41,7 +41,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabeticalReverse",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "ファイルエクスプローラ"
@@ -170,44 +170,44 @@
       "remotely-save:Remotely Save": false
     }
   },
-  "active": "7cde80804a3b3f72",
+  "active": "7f5ba2ebf77f169e",
   "lastOpenFiles": [
-    "Decision/notion-cache-deletion-decision.md",
-    "Decision/priority-decision-research-pc-first.md",
-    "Decision/obsidian-notion-sync-process.md",
-    "Decision/notion-startup-method.md",
-    "Decision/notion-daily-log-update.md",
+    "Notes/Welcome.md",
+    "Notes/サブスク管理.md",
+    "Notes/欲しいものリスト.md",
+    "Decision/research-lab-pc-priority.md",
     "Daily/2025-09-27.md",
-    "Knowledge/トークン節約.md",
-    "desktop.ini",
-    "zotero-library.json/desktop.ini",
-    "Logs/desktop.ini",
-    "Templates/desktop.ini",
-    "Decision/desktop.ini",
-    "Knowledge/desktop.ini",
-    "Mistakes/desktop.ini",
-    "Projects/desktop.ini",
-    "Preferences/desktop.ini",
-    "Body/desktop.ini",
-    "Zotero/Zur Elektronentheorie der Metalle - Drude - 1900 - Annalen der Physik - Wiley On.md",
-    "Zotero/Ultrasensitive photoelectrochemical biosensor for DNA 5-methylcytosine analysis.md",
-    "Zotero/Methylated circulating tumor DNA in hepatocellular carcinoma A comprehensive ana.md",
-    "Zotero/Electron beam lithography on nonplanar and irregular surfaces.md",
-    "Zotero/A strategy to fabricate nanostructures with sub-nanometer line edge roughness.md",
-    "Zotero/3D matrixed DNA self-nanocatalyzer as electrochemical sensitizers for ultrasensi.md",
-    "Zotero/Lasing action in strongly coupled plasmonic nanocavity arrays.md",
-    "Zotero/Label-Free Optical Imaging of Nanoscale Single Entities.md",
-    "Zotero/5-Hydroxymethylcytosine Far Beyond the Intermediate of DNA Demethylation.md",
-    "Zotero/Dynamic Shadowing Growth and Its Energy Applications.md",
-    "Zotero/Study the protein concentration and temperature by photonic crystal structure.md",
-    "Zotero/Selective loss of 5hmC promotes neurodegeneration in the mouse model of Alzheime.md",
-    "Zotero/Metasurface-tuned light-matter interactions for high-performance photodetectors.md",
-    "Zotero/Label-Free and Sequence-Independent Isothermal Amplification Strategy for the Si.md",
-    "Zotero/Exploration of the mechanism of 5-Methylcytosine promoting the progression of he.md",
-    "Zotero/Direct sequencing of DNA 5-methylcytosine by engineered dioxygenase NTET-assiste.md",
-    "Zotero/Digital Bioassays Theory, Applications, and Perspectives.md",
-    "Zotero/Development of techniques for DNA-methylation analysis.md",
-    "Zotero/A compartment-free digital plasmonic coupling assay via single-particle imaging.md",
+    "Daily/Daily ログ.md",
+    "Decision/zotero-integration-priority.md",
+    "Daily/2026-06-27.md",
+    "Daily/2026-06-29.md",
+    "Daily/2026-07-01.md",
+    "INDEX.md",
+    "Claude会話ログ.md",
+    "タスク.md",
+    "PC選定_2026-07-02.md",
+    "PC選定_追記_2026-07-02.md",
+    "サブスク管理 (2).md",
+    "無題のファイル.base",
+    "欲しいものリスト (3).md",
+    "_trash/サブスク管理.md (重複2・統合済み)",
+    "_trash/Claude会話ログ.md (旧ルート・Logsへ移動済み)",
+    "_trash/欲しいものリスト (3).md (Notesへ移動済み)",
+    "_trash/無題のファイル.base (空ファイル)",
+    "_trash/サブスク管理.md (重複1・統合済み)",
+    "_trash/PC選定_2026-07-02.md (旧ルート・統合済み)",
+    "_trash/PC選定_追記_2026-07-02.md (統合済み)",
+    "_trash/CLAUDE.md",
+    "_trash/Googleカレンダー運用ルール確定（2026-06-21）.md",
+    "_trash/チャットログ置き場.md",
+    "Logs/Claude会話ログ (1).md",
+    "Decision/PC選定_2026-07-02.md",
+    "サブスク管理.md",
+    "サブスク管理 (1).md",
+    "欲しいものリスト (4).md",
+    "Body/体・筋トレ記録_2026-06-14.md",
+    "_trash/2026-06-26.md.gdoc",
+    "_trash",
     "無題のファイル.canvas"
   ]
 }

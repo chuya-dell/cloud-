@@ -4,3 +4,9 @@ zotero-library.json
 Zotero/
 zotero-library.json
 .obsidian/plugins/
+
+
+
+
+# Ignore Smart Environment folder
+.smart-env
