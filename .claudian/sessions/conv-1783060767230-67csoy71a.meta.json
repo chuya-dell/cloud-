@@ -1,0 +1,24 @@
+{
+  "id": "conv-1783060767230-67csoy71a",
+  "providerId": "claude",
+  "title": "提案：3層構造での整理",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1783060767238,
+  "updatedAt": 1783219480697,
+  "lastResponseAt": 1783219477038,
+  "sessionId": "0c77692d-41e7-4c99-84ed-64f6d7f0181c",
+  "providerState": {
+    "providerSessionId": "0c77692d-41e7-4c99-84ed-64f6d7f0181c"
+  },
+  "currentNote": "ラボノート/260626_段階希釈 時間見積もりメモ.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 8,
+    "cacheCreationInputTokens": 1712,
+    "cacheReadInputTokens": 58821,
+    "contextWindow": 200000,
+    "contextTokens": 60541,
+    "percentage": 30,
+    "contextWindowIsAuthoritative": true
+  }
+}

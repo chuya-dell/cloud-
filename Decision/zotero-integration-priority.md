@@ -1,3 +1,10 @@
+---
+date: 2026-06-20
+theme: Zotero統合を最優先タスクに決定
+status: resolved
+tags: [Zotero, タスク優先度]
+---
+
 ## Zotero統合を最優先タスクに決定
 
 **決定日**: 2026-06-20

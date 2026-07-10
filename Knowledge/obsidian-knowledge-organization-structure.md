@@ -1,3 +1,10 @@
+---
+date: 2026-06-21
+theme: ObsidianのKnowledge・Decision組織化構造
+status: reference
+tags: [Obsidian, フォルダ構成, 運用ルール]
+---
+
 ## ObsidianのKnowledge・Decision組織化構造
 
 ### 概要

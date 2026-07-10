@@ -1,3 +1,11 @@
+---
+date: 2026-06-27
+theme: AI外部脳としてのObsidian活用方針（議論用、YouTube19本サーベイ）
+status: reference
+tags: [Obsidian, AI外部脳, 運用方針]
+notion_url: https://app.notion.com/p/38ce390406d181f098caf736d4ebbeb0
+---
+
 # AI外部脳としてのObsidian活用方針（議論用）
 
 > Notion: https://app.notion.com/p/38ce390406d181f098caf736d4ebbeb0  

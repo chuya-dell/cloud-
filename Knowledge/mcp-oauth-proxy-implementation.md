@@ -1,32 +1,42 @@
-## MCPサーバーのOAuth対応プロキシ実装
+---
+date: 2026-06-21
+theme: MCPサーバーのOAuth対応・軽量Node.jsプロキシ実装
+status: resolved
+tags: [MCP, OAuth, Node.js, ngrok, claude.ai]
+related: ["Knowledge/ngrok-static-domain-setup", "Knowledge/claude_ai_obsidian_mcp"]
+---
 
-### 概要
-claude.aiのRemote MCP連携で必要なOAuth認可機能をプロキシサーバー経由で追加する方法
+## summary
+claude.aiのRemote MCP連携には、既存のsupergatewayでは対応できないOAuth認可・Acceptヘッダー要件があったため、Node.jsで独自の軽量MCPプロキシサーバーを実装して解決した。
 
-### 詳細
-
-#### 問題
+## problem
 - supergatewayがOAuthメタデータエンドポイント（`/.well-known/oauth-authorization-server`）非対応
 - claude.aiが自動クライアント登録（Dynamic Client Registration）を要求
-- Acceptヘッダーの厳密チェック（`application/json, text/event-stream`）が制限的
+- Acceptヘッダーの厳密チェック（`application/json, text/event-stream`）が制限的で、claude.aiが送る`Accept: */*`を弾く
+- 多重SSE接続でsupergatewayがクラッシュ（502/503エラー）
 
-#### 解決策
-1. OAuthプロキシレイヤーの追加（ポート8765）
-2. Acceptヘッダー書き換え機能
-3. Session ID付与機能
-4. エンドポイント：`/mcp` で統一
+## solution
+Node.jsで軽量MCPサーバー（`mcp-server.js`）を自作し、Obsidian Vault MCPをプロキシする形で以下を実装:
+- Acceptヘッダー厳密チェックを無効化
+- OAuth動的登録エンドポイント追加
+- `POST /mcp` エンドポイントでStreamableHTTP対応
+- `mcp-session-id` ヘッダー追加
 
-#### 実装箇所
-- プロキシ：`C:\Users\chuya\mcp-oauth-proxy.js`（Node.js Express）
-- MCPサーバー：ローカルポート8080
-- ngrokトンネル：`https://styling-shakily-underfed.ngrok-free.dev/mcp`
-
-#### レジストレーション流れ
-```
-claude.ai → ngrok → プロキシ(8765) → supergateway(8080)
-↓
-OAuthメタデータ取得 → クライアント登録 → トークン取得 → MCP接続
+**起動:**
+```powershell
+node mcp-server.js
 ```
 
-### 参考
-- 日付: 2026-06-21
+## architecture
+```
+claude.ai → ngrok → mcp-server.js（Node.js, ポート8766, OAuth+ヘッダー対応込み）→ Obsidian Vault
+```
+旧構成（supergateway使用時）で検討したプロキシレイヤー案:
+```
+claude.ai → ngrok → OAuthプロキシ(8765) → supergateway(8080) → OAuthメタデータ取得 → クライアント登録 → トークン取得 → MCP接続
+```
+最終的にはsupergateway自体を自作サーバーで置き換える方式に統合。
+
+## related
+- ngrokによる公開設定: `Knowledge/ngrok-static-domain-setup`
+- claude.ai側の接続設定: `Knowledge/claude_ai_obsidian_mcp`

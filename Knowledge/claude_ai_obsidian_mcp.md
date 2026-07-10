@@ -1,3 +1,12 @@
+---
+date: 2026-06-21
+theme: claude.ai（ブラウザ）からObsidian Vaultへのリモート接続（ngrok経由）
+status: resolved
+tags: [Claude, MCP, Obsidian, ngrok, リモート接続]
+related: ["Knowledge/claude-mcp-obsidian-setup"]
+security_note: 2026-07-10、本文に平文記載されていたngrok認証トークンを伏字化・削除済み（実体は%LOCALAPPDATA%\ngrok\ngrok.yml側で管理）
+---
+
 # claude.ai（ブラウザ）からObsidian Vaultへ接続する方法
 
 ## 構成
@@ -32,4 +41,4 @@ PC起動時に自動起動。手動で起動する場合は `obsidian-mcp-start.
 
 - supergaetewayはNG（Acceptヘッダー `application/json, text/event-stream` を強制するがclaude.aiは `*/*` を送る）
 - OAuth動的クライアント登録（`/oauth/register`）が必要
-- ngrok認証トークン: `3FPL3H1y333UwBzTFnYyBZd0viY_7LWnwKouSQ4fxUWbq7W4U`
+- ngrok認証トークン: `%LOCALAPPDATA%\ngrok\ngrok.yml` 内に設定済み（本ノートには平文記載しない。ngrokダッシュボードで再確認・ローテーション可能）

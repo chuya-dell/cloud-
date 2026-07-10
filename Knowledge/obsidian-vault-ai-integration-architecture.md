@@ -1,3 +1,11 @@
+---
+date: 2026-06-21
+theme: Obsidian Vault × AI統合アーキテクチャ全体図
+status: reference
+tags: [Obsidian, AI統合, アーキテクチャ]
+related: ["Knowledge/ai-role-division-map", "Knowledge/obsidian-vault-google-drive-sync"]
+---
+
 ## Obsidian Vault × AI統合アーキテクチャ
 
 ### 概要

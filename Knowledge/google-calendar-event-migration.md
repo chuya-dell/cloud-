@@ -1,3 +1,11 @@
+---
+date: 2026-06-21
+theme: Googleカレンダー予定移動記録（忠→実験）
+status: open（一部未移動）
+tags: [Googleカレンダー, 作業記録]
+related: ["Knowledge/google-calendar-operation-rules"]
+---
+
 ## Googleカレンダー予定移動記録（忠→実験）
 
 ### 概要

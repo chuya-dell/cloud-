@@ -1,3 +1,10 @@
+---
+date: 2026-06-21
+theme: AI運用理念（AIに依存しない知識ベース）
+status: resolved
+tags: [AI運用, Obsidian, データ主権]
+---
+
 # AI運用理念
 
 作成日: 2026-06-21

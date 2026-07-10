@@ -1,0 +1,24 @@
+{
+  "id": "conv-1783594607265-g845ghaic",
+  "providerId": "claude",
+  "title": "Start new session",
+  "titleGenerationStatus": "success",
+  "createdAt": 1783594607266,
+  "updatedAt": 1783594624965,
+  "lastResponseAt": 1783594624965,
+  "sessionId": "b2666c4f-272a-4a32-9837-3376738e7444",
+  "providerState": {
+    "providerSessionId": "b2666c4f-272a-4a32-9837-3376738e7444"
+  },
+  "currentNote": "タスク.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 8,
+    "cacheCreationInputTokens": 1656,
+    "cacheReadInputTokens": 18653,
+    "contextWindow": 200000,
+    "contextTokens": 20317,
+    "percentage": 10,
+    "contextWindowIsAuthoritative": true
+  }
+}

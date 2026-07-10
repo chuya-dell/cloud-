@@ -1,3 +1,11 @@
+---
+date: 2026-06-21
+theme: Claude Code hookメモ（実運用の不安定さ・現行設定）
+status: open（ログオフ時自動保存が未解決）
+tags: [Claude Code, hook, トラブルシューティング]
+related: ["Knowledge/claude-code-hook-system"]
+---
+
 # Claude Code hookメモ
 
 ## Stopフックの挙動

@@ -1,6 +1,17 @@
-## Notionアプリの完全再インストール決定
+---
+date: 2026-06-21
+theme: Notionデスクトップアプリ再インストール実施決定
+status: resolved
+tags: [Notion, トラブルシューティング, 再インストール]
+related: ["Decision/notion-cache-deletion-decision", "Knowledge/notion-gpu-crash-solution"]
+---
 
-**決定日**: 2026-06-21
-**理由**: キャッシュ削除実施後も依然としてアプリがクラッシュするため、キャッシュ破損ではなく、アプリインストール自体の破損と判断。
-**内容**: Notionのアンインストール（コントロールパネルから）→ notion.so/desktopから最新版を再ダウンロード→再インストール
-**影響範囲**: アプリの再インストール中は使用不可。ただしWebブラウザでの使用は継続可能。
+## decision
+Notionデスクトップアプリを完全アンインストール後、notion.so/desktopから最新版を再ダウンロード・新規インストールする。
+
+## reason
+キャッシュ削除（`Decision/notion-cache-deletion-decision`）実施後も起動時クラッシュが継続。Webブラウザ版は正常動作するため、キャッシュ破損ではなくアプリインストール自体の破損と判断。
+
+## impact
+- 再インストール中はデスクトップアプリ使用不可（Webブラウザ版は継続使用可能、データロスなし）
+- ログイン情報はサーバー側保持のため再ログインで復旧

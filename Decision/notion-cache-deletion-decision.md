@@ -1,3 +1,11 @@
+---
+date: 2026-06-21
+theme: Notionキャッシュフォルダの削除実行決定
+status: resolved（解決せず再インストールへ移行）
+tags: [Notion, トラブルシューティング, キャッシュ]
+related: ["Decision/notion-reinstall-decision", "Knowledge/notion-desktop-cache-fix"]
+---
+
 ## Notionキャッシュフォルダの削除実行決定
 
 **決定日**: 2026-06-21

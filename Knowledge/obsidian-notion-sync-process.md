@@ -1,3 +1,11 @@
+---
+date: 2026-06-21
+theme: ObsidianとNotionの同期手順
+status: reference
+tags: [Obsidian, Notion, 同期]
+related: ["Knowledge/notion-obsidian-role-design"]
+---
+
 ## ObsidianとNotionの同期手順
 
 ### 概要

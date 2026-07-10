@@ -1,3 +1,11 @@
+---
+date: 2026-06-21
+theme: MCP obsidian-vaultサーバー接続トラブルシューティング
+status: reference
+tags: [Claude, MCP, Obsidian, トラブルシューティング]
+related: ["Knowledge/claude-mcp-obsidian-setup"]
+---
+
 ## MCP obsidian-vault サーバー接続トラブルシューティング
 
 ### 概要

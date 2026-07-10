@@ -1,35 +1,39 @@
-## Claude Code CLIセットアップと起動方法
+---
+date: 2026-06-20
+theme: Claude Code CLIセットアップと起動方法
+status: resolved
+tags: [Claude Code, CLI, セットアップ]
+---
 
-### 概要
-Claude CodeはPowerShellのCLIから特定のディレクトリで起動できる。実行ファイルはAppDataに格納されている。
+## summary
+Claude Code CLI版をPATHに追加し、デスクトップショートカット経由で特定ディレクトリで起動する設定。
 
-### 詳細
-
-#### 実行ファイルの場所
+## executable_location
 ```
 C:\Users\<ユーザー名>\AppData\Local\AnthropicClaude\claude.exe
 ```
 
-#### ディレクトリを指定して起動
+## launch_command
 ```powershell
-claude "G:\パス\to\フォルダ"
+claude "G:\マイドライブ\Claude\セッション"
 ```
 
-#### 起動時の確認フロー
-1. テーマ選択（Dark mode推奨、Enterで確定）
-2. ログイン選択（Claude account with subscriptionを選択）
-3. ブラウザログイン（必要に応じてURLをcキーでコピー）
-4. ディレクトリ信頼確認（Yes, I trust this folder を選択）
-5. ファイル読み込み許可（Obsidian Vaultなどの確認）
+## path_setup
+exeファイルへのパスをWindowsのPATHに追加すると、PowerShellのどのディレクトリからも`claude`コマンドが使用可能になる。
 
-#### PATHへの追加
-exe ファイルへのパスをWindowsのPATHに追加することで、PowerShellのどのディレクトリからも `claude` コマンドが使用可能になる。
+## desktop_shortcut
+コマンドライン `claude "G:\マイドライブ\Claude\セッション"` を指定したショートカットをデスクトップに配置。ダブルクリックで起動し、自動的に該当ディレクトリでClaude Codeが立ち上がる。
 
-#### デスクトップショートカットの作成
+## first_launch_setup
+1. テーマ選択（Dark mode推奨）→ Enterで確定
+2. ログイン選択（Claude account with subscription）→ Enterで確定
+3. ブラウザでログイン（必要ならcキーでURLコピー）
+4. フォルダ信頼確認（Yes, I trust this folder）→ Enterで許可
+5. Obsidian Vault読み込み許可 → 2キー+Enterで以降は聞かれなくする
+
+## directory_structure
 ```
-cmds: claude "G:\マイドライブ\Claude\セッション"
+G:\マイドライブ\Claude\
+├── セッション/        （メイン作業ディレクトリ）
+└── AI会話ログ/       （会話記録）
 ```
-をショートカットのコマンドラインに指定してデスクトップに配置。ダブルクリックで起動可能。
-
-### 参考
-- 日付: 2026-06-20

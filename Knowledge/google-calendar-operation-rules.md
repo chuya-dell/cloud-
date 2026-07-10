@@ -1,3 +1,10 @@
+---
+date: 2026-06-21
+theme: Googleカレンダー運用ルール
+status: resolved
+tags: [Googleカレンダー, 運用ルール]
+---
+
 ## Googleカレンダー運用ルール
 
 ### 概要

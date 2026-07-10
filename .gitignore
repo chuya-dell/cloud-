@@ -10,3 +10,6 @@ zotero-library.json
 
 # Ignore Smart Environment folder
 .smart-env
+
+# Vault整理時の一時退避先（重複統合済み・内容は他ノートに反映済み）
+_trash/

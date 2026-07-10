@@ -1,35 +1,33 @@
-## Notionデスクトップアプリクラッシュ時のキャッシュ削除手順
+---
+date: 2026-06-21
+theme: Notionデスクトップアプリ キャッシュ破損クラッシュの解決法
+status: resolved
+tags: [Notion, トラブルシューティング, キャッシュ, Windows]
+related: ["Knowledge/notion-gpu-crash-solution"]
+---
 
-### 概要
-Notionデスクトップアプリが起動時にクラッシュする場合、キャッシュの破損が原因であることが多い。キャッシュ削除で解決する可能性が高い。
+## summary
+Notionデスクトップアプリが起動時にクラッシュする場合、多くはキャッシュ破損が原因。`%AppData%\Notion` 削除で大半解決する。GPUクラッシュ（`child-process-gone: GPU crashed`）が原因の場合は別問題 → `Knowledge/notion-gpu-crash-solution` 参照。
 
-### 詳細
+## symptom
+- アプリがマークをタップすると即座に落ちる／起動時にクラッシュする
+- Webブラウザ版（notion.so）は正常に動作する
 
-**症状**
-- アプリがマークをタップすると即座に落ちる
-- Webブラウザ版（notion.so）は正常に動作
+## cause
+デスクトップアプリのローカルキャッシュ破損
 
-**原因**
-- デスクトップアプリのキャッシュ破損
+## fix
+1. キャッシュフォルダの削除（最も効果的・推奨）
+   - Windowsキー+R → `%AppData%\Notion` を入力して実行
+   - フォルダごと削除
+   - PowerShell: `Remove-Item -Path "$env:APPDATA\Notion" -Recurse -Force`
+2. アプリ再起動
+3. 解決しない場合は再インストール
+   - コントロールパネルからNotion削除 → https://www.notion.so/desktop から再ダウンロード
 
-**解決手順**
+## workaround
+キャッシュ削除待ち・再インストール待ちの間はWebブラウザ版（https://notion.so）を使用可能。デスクトップアプリとほぼ同機能。
 
-1. **キャッシュフォルダの削除（推奨）**
-   - Windows: `%AppData%\Notion` フォルダを削除
-   - パス直接開き: Windowsキー+R → `%AppData%\Notion` を入力
-   - または PowerShell: `Remove-Item -Path "$env:APPDATA\Notion" -Recurse -Force`
-   - ログイン情報やページデータ（クラウド側）は消えない
-
-2. **アプリ再起動**
-   - デスクトップアプリを起動して動作確認
-
-3. **再インストール（必要な場合）**
-   - コントロールパネルからNotion削除
-   - https://www.notion.so/desktop から再ダウンロード
-
-**代替案**
-- キャッシュ削除待ちの間はWebブラウザ版（https://notion.so）を使用可能
-- Web版はデスクトップアプリとほぼ同じ機能を提供
-
-### 参考
-- 日付: 2026-06-21
+## notes
+- キャッシュ削除でもログインデータ・ページデータ（Notionクラウド側）は失われない
+- 削除後の初回起動はキャッシュ再構築のため時間がかかる場合あり

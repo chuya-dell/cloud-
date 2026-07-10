@@ -1,29 +1,28 @@
-## MCP接続管理のベストプラクティス
+---
+date: 2026-06-21
+theme: MCP接続管理の方針（トークン削減のための取捨選択）
+status: resolved
+tags: [MCP, Claude Code, トークン節約]
+related: ["Knowledge/token-consumption-optimization"]
+---
 
-### 概要
-Claude Codeで複数のMCPツールを接続する際の最適な構成
+## summary
+Claude Codeで接続するMCPツールが多いほど`system-reminder`のツール一覧が肥大化し、毎ターンのトークン消費が増える。使用頻度に基づき接続を取捨選択した（2026-06-21時点）。
 
-### 削減効果
-- MCPを減らすことで `system-reminder` のツール一覧が半分以下になる可能性
-- 毎ターン自動で全リストが読み込まれるため、削減効果は継続的
+## decision（2026-06-21時点の接続状態）
+| ツール | 判断 | 理由 |
+|---|---|---|
+| obsidian-vault | 保持 | ClaudeのAI外部記憶、MCPアクセスが高速 |
+| Notion | 保持 | 記録システムの主要媒体、ユーザーとの参照用UI |
+| Google Calendar | 保持 | タスク管理システムとして流用、定期参照が必要 |
+| Claude in Chrome | 保持（オプション） | たまに使用するため残す |
+| Gmail | 削除 | 日常の会話で使用機会が低い |
+| Google Drive | 削除 | システムが多いと不要、トークン消費削減優先 |
+| Obsidian Vault（カスタム実装） | 未接続 | エラーあり |
+| GitHub連携 | 未接続 | 未設定 |
 
-### 推奨構成（優先度順）
+## effect
+MCPを減らすことで`system-reminder`のツール一覧が半分以下になる可能性。毎ターン自動で全リストが読み込まれるため削減効果は継続的。
 
-**必須**
-- obsidian-vault：外部記憶として重要
-- Notion：主要な記録先
-- Google Calendar：タスク管理連携
-
-**オプション**
-- Claude in Chrome：たまに使う場合は残す
-
-**削除推奨**
-- Gmail：Claudeとの会話では使わない
-- Google Drive：システムが多いと不要
-- 他の未使用MCP
-
-### 設定変更方法
-Claude Codeの設定画面（右上の歯車マーク）から接続・切断操作が可能
-
-### 参考
-- 日付: 2026-06-21
+## how_to_change
+Claude Codeの設定画面（右上の歯車マーク）から接続・切断操作が可能。

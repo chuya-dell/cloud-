@@ -1,3 +1,11 @@
+---
+date: 2026-06-21
+theme: 研究室PC環境構築手順（Claude Code環境の複製）
+status: resolved
+tags: [PC環境構築, Claude Code, MCP, タスクスケジューラ]
+notion_url: https://app.notion.com/p/386e390406d181a69c5adfd9154385fc
+---
+
 # 研究室PC環境構築手順
 
 > Notion: https://app.notion.com/p/386e390406d181a69c5adfd9154385fc

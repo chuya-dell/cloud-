@@ -1,3 +1,10 @@
+---
+date: 2026-06-21
+theme: Claude Desktop ウィンドウ管理とプロセス確認
+status: reference
+tags: [Claude Desktop, トラブルシューティング, マルチモニター]
+---
+
 ## Claude Desktop ウィンドウ管理とプロセス確認
 
 ### 概要

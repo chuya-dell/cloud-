@@ -1,0 +1,23 @@
+{
+  "id": "conv-1783219485917-l3odbj1ng",
+  "providerId": "claude",
+  "title": "Confirm availability",
+  "titleGenerationStatus": "success",
+  "createdAt": 1783219485918,
+  "updatedAt": 1783594590610,
+  "lastResponseAt": 1783593457371,
+  "sessionId": "e2aa6132-8b18-4130-9d2f-c68c3ae4f779",
+  "providerState": {
+    "providerSessionId": "e2aa6132-8b18-4130-9d2f-c68c3ae4f779"
+  },
+  "currentNote": "ラボノート/260701_【デジタルカウント】DNAハイブリッド検出（カメラ＋スペクトル前後比較）.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 0,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 0,
+    "percentage": 0
+  }
+}

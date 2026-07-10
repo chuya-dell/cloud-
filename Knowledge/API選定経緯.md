@@ -1,3 +1,11 @@
+---
+date: 2026-06-20
+theme: API選定経緯（会話ログ構造化システム、Gemini vs Anthropic）
+status: resolved
+tags: [Anthropic API, Gemini API, API選定]
+related: ["Knowledge/anthropic-api-pricing"]
+---
+
 # API選定経緯（会話ログ構造化システム）
 
 **記録日**: 2026-06-20
@@ -33,3 +41,9 @@
 - Google AI Proを解約した状態のアカウント
 - かつ支払い情報を登録済みであること
 - 現状は両方の条件が揃わず断念
+
+## Gemini無料枠の理論値（参考）
+- Gemini 2.0 Flash: 1日1500リクエスト、1分15リクエスト
+- 無料枠でも支払い情報登録が必須（最近の仕様）
+- 実運用ではAI Pro契約時は`limit: 0`になりほぼ使用不可
+- 参考: https://aistudio.google.com/app/apikey

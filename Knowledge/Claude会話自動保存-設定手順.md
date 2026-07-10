@@ -1,3 +1,11 @@
+---
+date: 2026-06-21
+theme: Claude会話自動保存の設定手順（別PCへの展開）
+status: resolved
+tags: [Claude Code, タスクスケジューラ, 自動保存]
+related: ["Knowledge/conversation-auto-save-architecture"]
+---
+
 # Claude会話自動保存の設定手順
 
 ## 概要

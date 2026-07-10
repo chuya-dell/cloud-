@@ -1,3 +1,10 @@
+---
+date: 2026-06-21
+theme: iPhoneでのAI連携（できること・できないこと）
+status: open（Remotely Save同期未解決）
+tags: [iPhone, Gemini, Obsidian, Claude, モバイル連携]
+---
+
 # iPhoneでのAI連携メモ
 
 ## できること

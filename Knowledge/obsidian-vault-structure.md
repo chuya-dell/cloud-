@@ -1,3 +1,11 @@
+---
+date: 2026-06-21
+theme: Obsidian Vaultシステム構成全体
+status: reference
+tags: [Obsidian, Vault, システム構成]
+related: ["Knowledge/obsidian-vault-zotero-folder-structure", "Knowledge/zotero-to-obsidian-flow"]
+---
+
 ## Obsidian Vault システム構成
 
 ### 概要

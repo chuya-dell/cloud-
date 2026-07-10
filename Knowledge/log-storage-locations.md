@@ -1,9 +1,19 @@
+---
+date: 2026-06-21
+theme: ログ保管場所一覧
+status: reference
+tags: [ログ, 保存先, Google Drive]
+related: ["Knowledge/conversation-auto-save-architecture"]
+---
+
 ## ログ保管場所一覧
 
 ### AI会話ログ
 - 保存先: `G:\マイドライブ\AI会話ログ\`
 - 内容: Claude APIセッションログ
 - 自動保存: PC起動時にタスクスケジューラで実行
+- ディレクトリ構成案: `AI会話ログ/Claude/`・`AI会話ログ/Gemini/`・`AI会話ログ/その他/`
+- ファイル命名規則: `{セッションタイトル}-{YYYYMMDD}.md`（例: `obsidian-vault-gdrive-sync-20260620.md`）
 
 ### 環境構築ログ
 - 保存先: `G:\マイドライブ\Obsidian Vault\Logs\`

@@ -1,32 +1,37 @@
-## Zotero論文のVault移行フロー
+---
+date: 2026-06-21
+theme: Zotero論文のObsidian Vault同期フロー（実装：カスタムスクリプト）
+status: resolved
+tags: [Zotero, Obsidian, 同期, 文献管理]
+related: ["Knowledge/zotero-obsidian-sync-formats"]
+---
 
-### 概要
-Zoteroの406件（論文386件 + 添付ファイル20件）をObsidian VaultにMarkdown化する自動化システム。
+## summary
+"AIに依存しない個人知識ベース"を実現するため、Zoteroのローカルデータベース（SQLite）をAIに直接触らせず、Markdownテキスト化を経由してClaude/Gemini/NotebookLMからアクセス可能にする設計。実装はObsidianプラグイン（ZotLit等）ではなく、カスタムスクリプト `zotero_to_obsidian.py` による一括変換方式。2026-06-21時点で386件のmdファイル完全同期済み（hmC関連が主、plasmon関連21件）。
 
-### 現状
-- **Zotero総件数**: 406件
-  - 論文本体: 386件
-  - note・attachment: 20件
-- **Vault移行済み**: 386件のmdファイル完全同期
-- **含有テーマ**: hmC関連が主（plasmonは21件）
+## architecture
+```
+Zotero（論文DB, SQLite）
+  ↓ ライブラリエクスポート（Better CSL/BibTeX JSON）
+zotero-library.json
+  ↓ zotero_to_obsidian.py（論文のみ抽出・md化、note/attachment除外）
+Obsidian Vault/Zotero/（386件のmdファイル）
+  ↓ Google Drive同期
+Claude（MCP直接）/ Gemini・NotebookLM（Drive経由）
+```
 
-### 移行スクリプト
-- `zotero_to_obsidian.py`
-- 入力: `zotero-library.json` (Better BibTeX形式)
-- 出力: `Obsidian Vault/Zotero/` フォルダ
+## stats
+- Zotero総件数: 406件（論文本体386件 + note・attachment等20件）
+- Vault移行済み: 386件（論文のみ、note/attachmentはフィルタで除外）
 
-### JSONエクスポート手順
-1. Zoteroを開く
-2. `ファイル` → `ライブラリをエクスポート`
-3. 形式: **Better CSL JSON** または **Better BibTeX JSON**
-4. 保存先: `G:\マイドライブ\Obsidian Vault\zotero-library.json\zotero-library.json`
-5. スクリプト再実行でVaultを更新
+## sync_procedure
+1. Zoteroを開く → `ファイル` → `ライブラリをエクスポート`
+2. 形式: **Better CSL JSON** または **Better BibTeX JSON**
+3. 保存先: `G:\マイドライブ\Obsidian Vault\zotero-library.json\zotero-library.json`（上書き）
+4. `zotero_to_obsidian.py` を実行 → 新規/更新分のmdファイルがVaultに反映される
 
-### 新規論文追加フロー
-1. Zoteroで新規論文を追加
-2. JSONをエクスポート（上書き）
-3. `zotero_to_obsidian.py` を実行
-4. 新しいmdファイルがVaultに追加される
+## verification
+Pythonで `json.load()` 後、フィルタ後の論文アイテム数をカウントし同期対象件数を確認。
 
-### 参考
-- 日付: 2026-06-21
+## note
+プラグイン方式（ZotLit等）の比較検討は `Knowledge/zotero-obsidian-sync-formats` を参照。本Vaultでの実装はプラグインではなくカスタムスクリプト方式。

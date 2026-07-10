@@ -1,3 +1,11 @@
+---
+date: 2026-06-21
+theme: Claude Desktop Dispatch機能の有効化方針
+status: resolved
+tags: [Claude Desktop, Dispatch]
+related: ["Decision/dispatch-troubleshooting-approach", "Knowledge/claude-desktop-dispatch-setup"]
+---
+
 ## Claude Desktop Dispatch機能の有効化方針
 
 **決定日**: 2026-06-21

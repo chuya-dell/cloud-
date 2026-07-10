@@ -1,11 +1,14 @@
-## Google Drive上のClaude関連ディレクトリ構成整理
+---
+date: 2026-06-20
+theme: Google Drive上のClaude関連ディレクトリ再編
+status: resolved
+tags: [Google Drive, ディレクトリ構成, Claude]
+---
 
-### 概要
-Google Drive（G:\マイドライブ）内のClaude関連ファイルを一元管理するため、ディレクトリを整理する手順
+## summary
+Google Drive（`G:\マイドライブ`）内に散在していたClaude関連ファイルを `Claude/` フォルダへ一元化した整理記録。
 
-### 詳細
-
-**整理前の構成:**
+## before
 ```
 G:\マイドライブ
 ├── 1.実験データ_gdrive
@@ -14,24 +17,21 @@ G:\マイドライブ
 └── antigravity_chat_logs  ← 別管理（対象外）
 ```
 
-**整理後の構成:**
+## after
 ```
 G:\マイドライブ
 ├── 1.実験データ_gdrive  ← claud.セッション は削除
-├── Claude/  ← 新規作成（統合フォルダ）
-│   ├── セッション/  ← claud.セッション を移動
-│   └── AI会話ログ/  ← AI会話ログを移動
-└── antigravity_chat_logs  ← 変更なし
+├── Claude/  ← 新規統合フォルダ
+│   ├── セッション/  ← 旧 claud.セッション
+│   └── AI会話ログ/  ← 旧 AI会話ログ
+└── antigravity_chat_logs  ← 変更なし（Claude統合外で独立管理）
 ```
 
-### 必要な更新作業
-1. **フォルダ移動:**
-   - `G:\マイドライブ\1.実験データ_gdrive\claud.セッション` → `G:\マイドライブ\Claude\セッション`
-   - `G:\マイドライブ\AI会話ログ` → `G:\マイドライブ\Claude\AI会話ログ`
+## moved
+1. `1.実験データ_gdrive\claud.セッション` → `Claude\セッション`
+2. `AI会話ログ` → `Claude\AI会話ログ`
 
-2. **Claude Code設定の更新:**
-   - 作業ディレクトリパスを新しいセッションフォルダパスに更新
-   - プロジェクトキー名の再計算
-
-### 参考
-- 日付: 2026-06-20
+## follow_up_updates
+- Claude Codeプロジェクト設定ファイルのパスを新ディレクトリに更新
+- プロジェクトキー名の再計算
+- セッションデータ（Memory含む）を `C:\Users\chuya\.claude\projects\` から新パスへ移行済み

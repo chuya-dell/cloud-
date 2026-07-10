@@ -1,3 +1,10 @@
+---
+date: 2026-06-21
+theme: 各AIツール（Claude/Gemini/NotebookLM/ChatGPT）の役割分担マップ
+status: reference
+tags: [AI運用, Claude, Gemini, NotebookLM, ChatGPT]
+---
+
 ## 各AIツールの役割分担マップ
 
 ### Claude（メインツール）

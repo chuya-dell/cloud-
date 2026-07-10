@@ -1,3 +1,11 @@
+---
+date: 2026-06-20
+theme: Google DriveにおけるMarkdownファイルの検索インデックス問題
+status: reference
+tags: [Google Drive, Gemini, Markdown, NotebookLM, 検索インデックス]
+related: ["Claude会話ログ5ffb6195-a989-4557-a90a-c241a7c814ce"]
+---
+
 ## Google DriveにおけるMarkdownファイルの検索インデックス問題
 
 ### 概要

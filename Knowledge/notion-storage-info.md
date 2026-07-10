@@ -1,3 +1,10 @@
+---
+date: 2026-06-21
+theme: Notion無料プランのストレージ制限
+status: reference
+tags: [Notion, ストレージ]
+---
+
 ## Notion無料プランのストレージ制限
 
 ### 概要

@@ -1,48 +1,45 @@
-## Notionアプリ: GPUクラッシュ解決法
+---
+date: 2026-06-21
+theme: Notionデスクトップアプリ GPUクラッシュの解決法（Windows/Intel）
+status: resolved
+tags: [Notion, トラブルシューティング, GPU, Electron, Windows]
+related: ["Knowledge/notion-desktop-cache-fix"]
+session_id: bef69572-fa00-4e5f-81b2-738678ef5b35
+---
 
-### 概要
-Notion（Electronアプリ）起動時にGPUプロセスがクラッシュし、アプリが正常に起動しない問題の解決手順。IntelグラフィックスドライバーとElectronの相性問題が原因。
+## summary
+Notion（Electronアプリ）起動時にGPUプロセスがIntelグラフィックスドライバーとの相性問題でクラッシュし、正常に起動しない問題の解決手順。ソフトウェアレンダリング起動で確実に回避できる。
 
-### 詳細
+## environment
+- OS: Windows 11
+- CPU: Intel 13th Gen Core i7-13700H
+- Notion: 7.22.0
 
-**原因**
-- GPUハードウェアアクセラレーション使用時にGPUプロセスがクラッシュ
-- エラーログに `child-process-gone: GPU crashed` が記録される
-- Electronアプリ（Notionなど）で一般的な問題
+## symptom
+- Notionをダブルクリックしても起動しない、プロセスが一瞬起動してすぐ消える
+- ログに `child-process-gone: GPU crashed, exitCode: -2147483645` が記録される
 
-**解決手順**
+## log_location
+`C:\Users\chuya\AppData\Roaming\Notion\logs\main.log`
 
-1. **エラーログ確認**
-   - ログファイル（main.log）を確認し、GPUエラーを特定
+## fix
+1. GPUキャッシュを削除
+```powershell
+Stop-Process -Name "Notion" -Force
+Remove-Item "$env:APPDATA\Notion\GPUCache" -Recurse -Force
+Remove-Item "$env:APPDATA\Notion\DawnGraphiteCache" -Recurse -Force
+Remove-Item "$env:APPDATA\Notion\DawnWebGPUCache" -Recurse -Force
+```
+2. ソフトウェアレンダリングで起動
+```powershell
+Start-Process "$env:LOCALAPPDATA\Programs\Notion\Notion.exe" -ArgumentList '--disable-gpu --disable-gpu-compositing --use-gl=swiftshader --no-sandbox'
+```
+3. 恒久対策（未実施）: スタートメニューのショートカットを編集して上記フラグを追加、またはWindowsのグラフィックドライバーを更新
 
-2. **コマンドライン起動テスト**
-   - `--disable-gpu` フラグで起動試行（単独では不十分な場合あり）
-
-3. **設定ファイル永続化**
-   - Notionの設定ファイル（state.json）でハードウェアアクセラレーションを無効化
-   - ウィンドウ位置情報をリセット（画面中央に配置）
-
-4. **GPUキャッシュ削除**
-   - GPUレンダリングキャッシュを削除
-
-5. **ソフトウェアレンダリング起動**
-   - 推奨フラグ: `--disable-gpu --no-sandbox --use-gl=swiftshader`
-   - swiftshaderによるソフトウェアレンダリングで確実に起動
-
-6. **デスクトップショートカット修正**
-   - 削除するか、上記フラグを組み込んで修正
-
-### トラブルシューティング
-
-**ウィンドウが見えない場合**
-- state.jsonのウィンドウ位置をリセット
+## troubleshooting_window_not_visible
+- state.jsonのウィンドウ位置情報をリセット（画面中央に配置）
 - PowerShellで強制的にウィンドウを前面表示
-- トレイアイコンを確認（隠しアイコンの可能性）
+- タスクトレイの隠しアイコンも確認
 
-**完全に再初期化する場合**
-- state.json、キャッシュディレクトリを完全削除
-- 新規起動時に全設定がリセットされる
-
-### 参考
-- 日付: 2026-06-21
-- セッションID: bef69572-fa00-4e5f-81b2-738678ef5b35
+## troubleshooting_full_reset
+state.json・キャッシュディレクトリを完全削除すると新規起動時に全設定がリセットされる

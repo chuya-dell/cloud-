@@ -1,27 +1,24 @@
-## Obsidian VaultのZoteroフォルダ構造と検索方法
+---
+date: 2026-06-20
+theme: Obsidian Vault内Zoteroフォルダの参照方法と制限
+status: reference
+tags: [Zotero, Obsidian, 検索, トークン管理]
+related: ["Knowledge/zotero-to-obsidian-flow"]
+---
 
-### 概要
-現在のObsidian VaultにはZoteroフォルダに386件の論文ノート（.mdファイル）が存在し、AI側から参照可能な構造になっている。
+## summary
+Obsidian VaultのZoteroフォルダに386件の論文ノート（.md）が格納されており、Claude/MCP経由で参照可能。全件読み込みはトークンコストが大きいため、キーワード検索での絞り込みが必須。
 
-### 現在の状態
-- **フォルダ位置**: Obsidian Vault内のZoteroフォルダ
-- **ファイル数**: 386件
-- **ファイル形式**: Markdown (.md)
-- **アクセス方法**: `mcp__obsidian-vault__read_file` コマンド
+## access_methods
+- 検索: `search_files` で特定キーワードを含む論文ノートを探索
+- 直接読込: `mcp__obsidian-vault__read_file` で個別ノートの内容を確認
+- ユーザーの質問に応じて必要な1-2件のみ都度検索・参照する運用
 
-### 参照可能な操作
-- **キーワード検索**: `search_files` で特定キーワードを含むノートを探索
-- **直接読み込み**: 論文ノートを開いて内容を確認
-- **条件付き参照**: ユーザーの要求に応じて関連論文を検索・参照
+## limitations
+- 全件自動読み込みは非推奨（386件×トークンコスト＝過大）
+- ノートの充実度（Abstractのみ／notes・highlights付き）でファイルごとに情報量が変動
+- Zotero側のユーザーメモ・ハイライトはObsidianノートに含まれない
 
-### 参照時の制限
-- **全件自動読み込みは非効率**: 386件 × トークンコスト = 高コスト
-- **フォーマット依存**: ノートの充実度（Abstract のみか、詳細メモ付きか）により情報量変動
-
-### 論文分野の例
-- 5hmC（5-Hydroxymethylcytosine）関連
-- プラズモン（Plasmonics）関連
-- バイオセンシング関連
-
-### 参考
-- 日付: 2026-06-20
+## content_examples
+- 5hmC（5-Hydroxymethylcytosine）関連: がん研究文脈で多数（メインテーマ）
+- プラズモン関連: 21件（例: `Plasmonics Fundamentals and Applications.md`, `Plasmonic Biosensors for Single-Molecule Biomedical.md`, `High Q-Factor Plasmonic Surface Lattice Resonances.md` 等）

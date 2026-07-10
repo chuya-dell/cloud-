@@ -1,3 +1,11 @@
+---
+date: 2026-06-20
+theme: デスクトップアプリからCLI版Claude Codeへの移行
+status: resolved
+tags: [Claude Code, CLI]
+related: ["Knowledge/claude-code-cli-setup"]
+---
+
 ## デスクトップアプリからCLI版Claude Codeへの移行
 
 **決定日**: 2026-06-20

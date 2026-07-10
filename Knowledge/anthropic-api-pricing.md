@@ -1,40 +1,52 @@
-## Anthropic API（Claude）の料金体系と使用方法
+---
+date: 2026-06-20
+theme: Anthropic API（Claude）の料金体系・キー取得・セットアップ
+status: resolved
+tags: [Anthropic API, 料金, セットアップ]
+related: ["Knowledge/API選定経緯", "Knowledge/process-logs-to-obsidian-system"]
+---
 
-### 概要
-Anthropic APIはClaudeを外部スクリプトやアプリケーションから呼び出すためのAPI。従量課金式で、使用した分だけ請求される。
+## summary
+Anthropic APIは従量課金・プリペイド式（チャージ制、月額固定費なし、残高切れで自動停止）。会話ログ分類用途では低コストな claude-haiku-4-5 を採用。$5チャージで軽〜中使用なら数ヶ月〜数年もつ。
 
-### 料金詳細
-- **モデル**: claude-haiku-4-5（推奨）
-- **会話ログ1件あたり**: 約$0.0005〜$0.002（0.075〜0.3円）
-- **$5チャージの処理能力**: 2,500〜10,000件のログ処理が可能
-- **月300回処理時**: 約$0.3〜$1程度（45〜150円）
-- **5年以上使用可能**: $5チャージで軽・中程度の使用なら5年以上の利用期間
+## pricing_by_model
+| モデル | 1ファイルあたり | 月100件 | 月500件 | 推奨初回チャージ |
+|---|---|---|---|---|
+| claude-sonnet-4-6 | $0.005〜$0.02 | $0.5〜$2 | $2.5〜$10 | $20 |
+| claude-haiku-4-5（採用） | $0.0005〜$0.002 | $0.05〜$0.2 | $0.25〜$1 | $5 |
 
-### 課金方式
-- **都度課金（従量課金）**: 使った分だけ引き落とされる
-- **プリペイド式**: チャージした残高から消費される
-- **月額固定費なし**: 使わなければ費用は発生しない
-- **自動引き落としなし**: 残高がなくなったら停止するだけ
+- 月300回処理（ヘビー使用想定）でも $0.3〜$1程度／月
+- $5チャージで軽・中使用なら5年以上、ヘビー使用でも1〜2ヶ月分
 
-### APIキー取得
-1. https://console.anthropic.com/settings/billing でチャージ（$5推奨）
-2. https://console.anthropic.com/settings/keys でAPIキーを作成
-3. キーは `sk-ant-` で始まる形式
+## key_acquisition
+1. https://console.anthropic.com/ にログイン（アカウント作成必要）
+2. 左サイドバー「Settings → Keys」→「Create Key」
+3. キーをコピー（`sk-ant-...` 形式）
 
-### セットアップ
+## billing_setup
+1. https://console.anthropic.com/settings/billing にアクセス
+2. クレジットカード登録
+3. 「Top-up」で $5・$20・$50等をチャージ（任意金額も可）
+4. 都度課金・プリペイド式・自動引き落としなし（残高切れで停止するのみ）
+
+## config
+**config.envに記述:**
+```
+ANTHROPIC_API_KEY=sk-ant-api03-xxxxxxxxxxxxxxxxx
+```
+
+**Python利用例:**
 ```python
-import anthropic
+import os
+from anthropic import Anthropic
 
-client = anthropic.Anthropic(api_key="sk-ant-xxxx...")
+client = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 message = client.messages.create(
     model="claude-haiku-4-5",
     max_tokens=1024,
-    messages=[
-        {"role": "user", "content": "..."}
-    ]
+    messages=[{"role": "user", "content": "..."}]
 )
 ```
 
-### 参考
-- 日付: 2026-06-20
-- セッション: Claude Code会話内での実装
+## note
+Gemini APIとの比較検討・Anthropic採用の経緯は `Knowledge/API選定経緯` 参照。

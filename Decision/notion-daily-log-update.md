@@ -1,3 +1,10 @@
+---
+date: 2026-06-21
+theme: NotionのDailyログへ「Google AI Pro」セクション追加
+status: resolved
+tags: [Notion, Daily, 同期作業]
+---
+
 ## NotionのDailyログへ「Google AI Pro」セクション追加
 
 **決定日**: 2026-06-21

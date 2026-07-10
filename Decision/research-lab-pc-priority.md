@@ -1,22 +1,24 @@
-## 研究室PCの環境構築を優先
+---
+date: 2026-06-21
+theme: 研究室PC環境構築を最優先タスクに決定
+status: resolved
+tags: [PC環境構築, タスク優先度]
+related: ["Knowledge/研究室PC環境構築手順"]
+---
 
-**決定日**: 2026-06-21
+## decision
+研究室PC（Windows）の環境構築を最優先タスクとする。Mac環境構築は後回し（優先度低）。
 
-**理由**: 
-- 明日（6/22）から研究室のPCが使用可能
-- 現在のPCと同じ環境があれば、そこでもClaude・Obsidian・Notionの連携が可能
-- Macは優先度が低く、後回しに
+## reason
+ユーザーが翌日（6/22）から研究室のPCを使用可能になるため、現在のPC環境と同じセットアップ（Claude Code、Google Drive、MCP設定など）を先に整備することで研究室での作業効率を最大化できる。
 
-**内容**: 
-研究室PC（おそらくWindows）での以下の構築を優先実施
-1. Claude Code インストール
-2. Google Drive for Desktop インストール
-3. Node.js インストール
-4. obsidian-vault MCP設定
-5. タスクスケジューラ登録
-6. config.env（APIキー）のコピー
+## priority_order
+1. 現在のPC: タスクスケジューラのパス修正と動作確認
+2. 準備作業: 研究室PCセットアップの手順書完成
+3. 研究室PC: 環境構築実施（Claude Codeインストール、Google Drive for Desktop、Node.js、obsidian-vault MCP設定、タスクスケジューラ登録、config.env=APIキーのコピー）
+4. Mac: 後日対応（優先度低）
 
-**影響範囲**: 
-- セッションログの自動保存と処理が2つの環境で並行実行可能
-- 研究データの一元管理（Google Drive経由）
--
+## impact
+- 研究室でのClaude Code + Obsidian連携作業が可能に
+- セッションログの自動保存・処理が2環境で並行実行可能に（スケーラブル化）
+- Zotero論文活用・研究データの一元管理（Google Drive経由）

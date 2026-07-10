@@ -1,3 +1,10 @@
+---
+date: 2026-06-21
+theme: Claude Desktop Dispatch機能のセットアップ手順
+status: reference
+tags: [Claude Desktop, Dispatch, モバイル連携]
+---
+
 ## Claude Desktop Dispatch機能のセットアップ手順
 
 ### 概要

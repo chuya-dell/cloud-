@@ -1,14 +1,17 @@
-## Windows スタートアップフォルダを使った自動起動バッチ設定
+---
+date: 2026-06-21
+theme: Windowsスタートアップフォルダによる自動起動バッチ設定（MCPサーバー・ngrok）
+status: reference
+tags: [Windows, スタートアップ, バッチ, ngrok, MCP]
+---
 
-### 概要
-PC起動時に自動的にMCPサーバーとngrokトンネルを起動するため、スタートアップフォルダにバッチファイルを配置する方法。管理者権限不要。
+## summary
+PC起動時にObsidian MCPサーバーとngrokトンネルを自動起動するため、タスクスケジューラより簡易な「スタートアップフォルダ」にバッチファイルを配置する方法。管理者権限不要。
 
-### 詳細
+## location
+`C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
 
-#### バッチファイル配置
-ファイル: `C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\obsidian-mcp-start.bat`
-
-#### バッチ内容例
+## batch_example
 ```batch
 @echo off
 cd /d C:\Users\chuya
@@ -17,18 +20,14 @@ timeout /t 2 /nobreak
 start "ngrok tunnel" ngrok http --domain=styling-shakily-underfed.ngrok-free.dev 8766
 ```
 
-#### スタートアップフォルダ場所
-- Windows 10/11: `C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
-- ショートカット作成でも可能
+## caveat
+- 起動ポート番号の記録に8765と8766のブレが過去にあり。実際の稼働設定は `Knowledge/claude_ai_obsidian_mcp` 側の最新情報を正とする
+- 遅延起動（timeout/sleep）でMCPサーバー→ngrokの起動順序を保証
 
-### 利点
-- 管理者権限不要
-- タスクスケジューラより簡単
+## pros
+- 管理者権限不要、タスクスケジューラより設定簡単
 - バッチファイル削除で簡単に無効化可能
 
-### 注意
-- ターミナルウィンドウが自動で表示される
-- 複数のコマンドは複数のバッチファイルまたは`start`コマンドで並列実行
-
-### 参考
-- 日付: 2026-06-21
+## cons
+- ターミナルウィンドウが自動表示される（非表示化にはVBScriptラッパーが必要）
+- 複数コマンドは複数バッチファイルまたは`start`コマンドで並列実行

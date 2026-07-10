@@ -1,3 +1,10 @@
+---
+date: 2026-06-20
+theme: NotebookLMセットアップを二番目のアクションに設定
+status: resolved
+tags: [NotebookLM, タスク優先度]
+---
+
 ## NotebookLMセットアップを二番目のアクションに設定
 
 **決定日**: 2026-06-20

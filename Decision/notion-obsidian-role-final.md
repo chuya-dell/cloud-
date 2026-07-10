@@ -1,3 +1,11 @@
+---
+date: 2026-06-28
+theme: NotionとObsidianの役割分担（2026-06-28時点の決定、Obsidian主軸案）
+status: superseded（2026-06-30のINDEX.md統合でNotion=正データ・Obsidian=長期保管の倉庫という現行方針に再度変更）
+tags: [Notion, Obsidian, 運用設計]
+related: ["Knowledge/notion-obsidian-role-design", "Decision/obsidian-primary-decision"]
+---
+
 # NotionとObsidianの役割分担（最終決定 2026-06-28）
 
 ## 原則

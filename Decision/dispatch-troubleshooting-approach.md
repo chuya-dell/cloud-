@@ -1,3 +1,11 @@
+---
+date: 2026-06-21
+theme: Dispatch機能のトラブルシューティング方針（ユーザー自身の手動確認に切替）
+status: resolved
+tags: [Claude Desktop, Dispatch, トラブルシューティング]
+related: ["Decision/dispatch-setup-decision"]
+---
+
 ## Dispatch機能のトラブルシューティング方針
 
 **決定日**: 2026-06-21
