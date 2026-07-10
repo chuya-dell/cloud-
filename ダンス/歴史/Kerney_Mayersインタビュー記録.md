@@ -1,7 +1,17 @@
-# Boogaloo Traditions：Kerney Mayers インタビュー記録
+---
+theme: Kerney Mayersインタビュー記録（要約版、Boogaloo Traditions）
+status: reference
+tags: [ダンス, Popping, Boogaloo, Kerney Mayers, Oakland]
+related: ["ダンス/歴史/Kerney_Mayersインタビュー記録_全文版"]
+---
 
-出典：Funk In Focus「Boogaloo Traditions」シリーズ（動画URL未特定 — 要補完、55分超の長編）
+# Boogaloo Traditions：Kerney Mayers インタビュー記録（要約版）
+
+出典：Funk In Focus「Boogaloo Traditions」シリーズ
+https://www.youtube.com/watch?v=hy9RHsygwfc&list=PLk2D6uVL0un33Tt_oQCD6o0UqTad5htQH
 インタビュイー：Kerney Mayers（The Black Messengersオリジナルメンバー、1970年代Oakland）
+
+※全文文字起こしベースの詳細版は「Kerney_Mayersインタビュー記録_全文版.md」を参照。本ファイルは構造化された要約版。
 
 ---
 
@@ -13,7 +23,7 @@ Oakland Boogaloo（現在のPoppingやターフダンスの源流）の基礎を
 - **タレントショーと高校文化【00:01:33】**：Castlemont高校やFremont高校のタレントショーが、ダンサーたちの最大の発表の場であり新ムーブのお披露目の場だった。
 
 ## 2. 各レジェンドダンサーの「独自のフレーバー」
-- **John Murphy【00:02:18】**：「The Slot」や重厚なロボットムーブの創始者。彼の動きはサンフランシスコやLAのダンサーたちに直接的な影響を与えた（※前回記録のOakland_Boogalooビッグバン理論対談でも同一人物への言及あり、証言のクロスチェックが可能）。
+- **John Murphy【00:02:18】**：「The Slot」や重厚なロボットムーブの創始者。彼の動きはサンフランシスコやLAのダンサーたちに直接的な影響を与えた。
 - **Jory Walker（通称"Monk"）【00:03:42】**：滑らかに身体をうねらせる「Worming」のスペシャリスト。
 - **Donald Matthews（通称"Duck"）【00:03:55】**：アメフト・野球のパントマイム、細かな「Wiggling」を確立したアニメーションスタイルの先駆者。
 
@@ -28,5 +38,5 @@ Oakland Boogaloo（現在のPoppingやターフダンスの源流）の基礎を
 ---
 
 ## メモ
-- 元動画は55分超の長編で、当時のローカルグループの相関図やFresnoスタイルとの対比なども含む詳細な内容とのことだが、今回入手できたのは構造化された要約のみ。全文文字起こしが手に入れば追記が必要。
+- 元動画は55分超の長編。全文文字起こしベースの詳細な人間関係・エピソードは「Kerney_Mayersインタビュー記録_全文版.md」を参照。
 - John Murphyへの言及は「Oakland_Boogalooビッグバン理論対談記録.md」内の証言と重複・補完関係にあるため、突き合わせて読むと解像度が上がる。

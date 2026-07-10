@@ -1,3 +1,9 @@
+---
+theme: OSN秘話・ダンス本質論記録（坂見誠二シリーズ最終回）
+status: reference
+tags: [ダンス, Popping, 坂見誠二, Ken Swift, 理論]
+---
+
 # OSN秘話とダンス本質論記録（坂見誠二・Skeeter Rabbitシリーズ最終回）
 
 出典：YouTubeチャンネル「DANCE DIG UP」

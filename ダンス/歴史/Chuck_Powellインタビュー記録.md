@@ -1,7 +1,15 @@
+---
+theme: Chuck Powellインタビュー（Boogaloo Traditions）
+status: reference
+tags: [ダンス, Popping, Boogaloo, Chuck Powell, Oakland]
+---
+
 # Boogaloo Traditions：Chuck Powell インタビュー記録
 
-出典：Funk In Focus「Boogaloo Traditions: Chuck Powell (Black Messengers)」（動画URL未特定 — 要補完、約1時間の長編）
+出典：Funk In Focus「Boogaloo Traditions: Chuck Powell (Black Messengers)」
+https://www.youtube.com/watch?v=z_4AVyqihmI&list=PLk2D6uVL0un33Tt_oQCD6o0UqTad5htQH&index=8
 インタビュイー：Chuck Powell（The Black Messengersオリジナルメンバー）
+（約1時間の長編）
 
 ※既存の「POPPING_Boogaloo歴史簡介_中文版動画記録.md」にもChuck Powellの証言（別動画・別編集）が含まれるため、本記録と合わせて読むと人物像・証言の一貫性を検証しやすい。
 
@@ -27,8 +35,11 @@
 - **Black Panther党の影響**：1960年代後半からOaklandを本部に巻き起こったBlack Panther党の運動が、若者たちに「自分たちのアイデンティティを誇り、クリエイティブに表現する」精神的基盤を与えたと証言。
 - **音楽との同期**：James Brown、およびLarry Graham（Sly and the Family Stone）が発明したスラップベースの強烈なグルーヴが、ダンサーの肉体を弾かせ「ヒット」を打たせる最大の原動力だったと説明。
 
+## 補足
+- チャック・パウエル本人が当時の衣装や、実際の腕の振り方、首のアイソレーションを実演しながら解説するシーンが多く含まれる、史料価値の高い映像とのこと。
+
 ---
 
 ## メモ
 - 本インタビューの内容（Black Panther党の影響、Robert Shields、John MurphyのSlot＝Fresnoの原型説）は、既存記録「Oakland_Boogalooビッグバン理論対談記録.md」「Kerney_Mayersインタビュー記録.md」「POPPING_Boogaloo歴史簡介_中文版動画記録.md」と多くの点で重複・補強関係にある。Chuck Powell本人の証言としての一次性が高く、他の伝聞ベースの記録の裏付けとして機能する。
-- 動画URL未確定、詳細な文字起こしが入手できれば全文版として追記したい（Kerney Mayersと同様のフォーマット）。
+- 全文文字起こしが入手できれば追記したい（Kerney Mayersと同様のフォーマット）。

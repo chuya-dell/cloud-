@@ -1,3 +1,9 @@
+---
+theme: Vaultインデックス・運用ガイド（統合版、常時更新）
+status: active
+tags: [インデックス, 運用ガイド]
+---
+
 # 🧠 Vault インデックス — 運用ガイド（統合版）
 
 > 2026-06-30 統合: CLAUDE.md / Claudeの記憶.md / Claudeのログ.md / INDEX.md の4ファイルをここに一本化。

@@ -1,3 +1,10 @@
+---
+theme: Oakland Boogaloo 101（Boogaloo Danによる基礎ムーブ解説）
+status: reference
+tags: [ダンス, Popping, Boogaloo, Oakland, Boogaloo Dany]
+related: ["ダンス/歴史/Boogaloo_Dany発言記録"]
+---
+
 # Oakland Boogaloo 101：Boogaloo Danによる基礎ムーブ解説記録
 
 出典：Oakland Boogaloo 101

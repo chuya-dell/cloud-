@@ -1,3 +1,10 @@
+---
+theme: テクセンドフォトマスク Deep Research企業分析
+status: reference
+tags: [就活, テクセンドフォトマスク, Deep Research]
+notion_url: https://app.notion.com/p/20ce390406d18085840fe4424c908ece
+---
+
 # DR テクセンドフォトマスク
 
 > Notion: https://app.notion.com/p/20ce390406d18085840fe4424c908ece

@@ -1,7 +1,16 @@
+---
+theme: Boogaloo Dany（Dan）発言記録（Oakland Boogaloo 101）
+status: reference
+tags: [ダンス, Popping, Boogaloo, Oakland, Boogaloo Dany]
+---
+
 # Boogaloo Danyの発言記録
 
-出典：インタビュー（動画URL・タイムスタンプ未特定 — 要補完）
-話者：Boogaloo Dany（オークランド系ブガルーのオリジネーターの一人と思われる）
+出典：Oakland Boogaloo 101
+https://www.youtube.com/watch?v=aZu6nwhntHg&list=PLw-I8DV3D7-cU93kALAImNPgvSlXLG0L0&index=5
+話者：Boogaloo Dan（オークランド系ブガルーのオリジネーターの一人、1970年代初頭から活動）
+
+※既存の「Oakland_Boogaloo101_Boogaloo_Dan記録.md」（同一動画のムーブ実演解説）と対をなす、証言・マインドセット部分のフルクォート記録。
 
 ---
 
@@ -35,5 +44,5 @@
 ---
 
 ## メモ
-- タイムスタンプは元データに記載なし。動画の出典URLも未確定のため、判明次第追記する。
-- Fresno系（Boogaloo Sam / Electric Boogaloos）の証言と、Oakland系（Boogaloo Dany）の証言で「起源」「Moonwalk呼称」などに食い違いがある点は要整理（複数の地域で並行的にスタイルが発展した可能性）。
+- 動画タイトルは「Oakland Boogaloo 101」。同動画のムーブ実演部分は「Oakland_Boogaloo101_Boogaloo_Dan記録.md」に記録済み。
+- Fresno系（Boogaloo Sam / Electric Boogaloos）の証言（Moonwalkは1979年Soul Train以降）と、Oakland系Boogaloo Danの証言（1975年から自分たちがやっていた／呼称は元々Levitating・Backslide）で微妙に食い違いがある点は要整理（複数の地域で並行的にスタイルが発展した可能性）。

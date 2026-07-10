@@ -1,3 +1,9 @@
+---
+theme: POPPING/Boogaloo歴史簡介（中文版動画文字起こし）
+status: reference
+tags: [ダンス, Popping, Boogaloo, Chuck Powell, Oakland]
+---
+
 # POPPING/Boogaloo歴史簡介（中文版動画）文字起こし記録
 
 出典：POPPING Boogaloo 歷史簡介 l中文版l

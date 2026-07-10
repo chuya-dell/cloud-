@@ -1,3 +1,9 @@
+---
+theme: Medea Sirkas（Faisel Boogaloo & Boogaloo Dana）インタビュー記録
+status: reference
+tags: [ダンス, Popping, Boogaloo, Medea Sirkas, SF]
+---
+
 # Medea Sirkas（Faisel Boogaloo & Boogaloo Dana）インタビュー記録
 
 出典：Sway in the Morning「Legendary Dance Crew Medea Sirkas Break Down The History of The Culture and Demonstrate Live」

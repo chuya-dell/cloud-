@@ -1,3 +1,10 @@
+---
+theme: Boogaloo Samインタビュー Part2（全文版、ChinaFunk.cn）
+status: reference
+tags: [ダンス, Popping, Boogaloo, Boogaloo Sam, Fresno]
+related: ["ダンス/歴史/Boogaloo_Sam_Part3", "ダンス/歴史/Boogaloo_Sam_Part4_全文版", "ダンス/歴史/Boogaloo_Sam_Part5_最終章"]
+---
+
 # Boogaloo Sam | ChinaFunk.cn Special Interview | Part 2（全文版）
 
 出典：ChinaFunk.cn Special Interview Part 2

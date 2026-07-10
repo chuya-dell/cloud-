@@ -1,3 +1,11 @@
+---
+theme: パナソニックエナジー Deep Research詳細分析
+status: reference
+tags: [就活, パナソニック, Deep Research]
+notion_url: https://app.notion.com/p/200e390406d18169bd2cc755fde6668e
+related: ["就活/DR パナソニックエナジー"]
+---
+
 # DR パナソニックエナジー 詳細分析
 
 > Notion: https://app.notion.com/p/200e390406d18169bd2cc755fde6668e

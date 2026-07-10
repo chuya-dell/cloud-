@@ -1,6 +1,13 @@
+---
+theme: The Mysterious Poppers ドキュメンタリー記録（Long Beach）
+status: reference
+tags: [ダンス, Popping, Long Beach, ドキュメンタリー]
+---
+
 # The Mysterious Poppers ドキュメンタリー記録
 
-出典：『The Mysterious Poppers』（Chuco Films作品、動画URL未特定 — 要補完）
+出典：『The Mysterious Poppers』（Chuco Films作品）
+https://www.youtube.com/watch?v=PiJNCekuEi4&list=PLk2D6uVL0un33Tt_oQCD6o0UqTad5htQH&index=11
 ※自動生成トランスクリプトなし。映像内の会話・テロップ・史実から内容を精査した要約。
 題材：ロングビーチ拠点「The Mysterious Poppers」「Time Bandits」メンバー、Pop'n Taco（Bruno Falcon）に焦点
 
@@ -31,9 +38,11 @@ Mysterious Poppers初期のトップダンサー4人は、それぞれヘビ／�
 ## 5. Michael Jacksonへの影響【00:03:41】
 メンバー証言：「Pop'n Tacoは本物のレジェンドであり、Michael Jacksonに『Creepin'』やPoppingの技術、滑らかな足運びのすべてを教えた男だ。マイケルは彼からスタイルを受け継いだ（盗んだ）」という誇らしげな証言。
 
+## 6. 後半：同窓会サイファーシーン【00:20:31〜】
+年を重ねたメンバーたちが集まり、当時のファンクビートに合わせて即興でヒットを打ち合うサイファー（円陣）シーンを収録。互いのジャケット（『Long Beach Time Bandits』『Mysterious Poppers Baby Rattler』）を見せ合う場面もあり、Long Beach Poppingシーンの絆の深さが表れている。
+
 ---
 
 ## メモ
-- 動画URL未確定のため判明次第追記。
 - 「King」の称号システム（Python/Rattler/Cobra/Snake）は、Long Beach独自のヒエラルキー文化として、他のFresno/Oakland系の記録（Electric Boogaloos、Black Messengers）とは異なる組織構造として興味深い。
 - Michael JacksonへのPop'n Tacoの影響は、当事者コミュニティ内での通説として語られているが、Michael Jackson本人の証言等での裏付けは別途必要。

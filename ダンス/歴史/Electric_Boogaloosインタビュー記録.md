@@ -1,3 +1,10 @@
+---
+theme: Electric Boogaloos関連インタビュー記録（Popin Pete, Suga Pop, Boogaloo Sam）
+status: reference
+tags: [ダンス, Popping, Boogaloo, Electric Boogaloos, Fresno]
+related: ["ダンス/歴史/Boogaloo_Sam_Part2_全文版", "ダンス/歴史/Boogaloo_Sam_Part3"]
+---
+
 # Electric Boogaloos関連インタビュー記録（Gemini会話ログより）
 
 出典プレイリスト: https://www.youtube.com/watch?v=GB-tx_1-XJM&list=PLw-I8DV3D7-cU93kALAImNPgvSlXLG0L0

@@ -1,3 +1,9 @@
+---
+theme: Skeeter Rabbit名前のルーツ・Rock Steady Crew弟子入り仲介記録
+status: reference
+tags: [ダンス, Popping, Skeeter Rabbit, Rock Steady Crew]
+---
+
 # Skeeter Rabbitの名前のルーツとRock Steady Crew弟子入り仲介記録
 
 出典：YouTubeチャンネル「DANCE DIG UP」

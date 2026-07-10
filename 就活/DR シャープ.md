@@ -1,3 +1,10 @@
+---
+theme: シャープ Deep Research企業分析
+status: reference
+tags: [就活, シャープ, Deep Research]
+notion_url: https://app.notion.com/p/262e390406d18076a99fd20684fd9706
+---
+
 # DR シャープ
 
 > Notion: https://app.notion.com/p/262e390406d18076a99fd20684fd9706  

@@ -1,3 +1,10 @@
+---
+theme: パナソニックハウジングソリューションズ（PHS） Deep Research企業分析
+status: reference
+tags: [就活, パナソニック, Deep Research]
+notion_url: https://app.notion.com/p/1fae390406d180e7b621f0019727826d
+---
+
 # DR パナソニックハウジングソリューションズ（PHS）
 
 > Notion: https://app.notion.com/p/1fae390406d180e7b621f0019727826d

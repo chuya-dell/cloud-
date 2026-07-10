@@ -1,3 +1,9 @@
+---
+theme: Skeeter Rabbit & Poppin Pete インタビュー（名前の由来・出会いの原点）
+status: reference
+tags: [ダンス, Popping, Skeeter Rabbit, Poppin Pete]
+---
+
 # Skeeter Rabbit & Poppin Pete インタビュー記録（名前の由来・出会いの原点）
 
 出典：インタビュー動画

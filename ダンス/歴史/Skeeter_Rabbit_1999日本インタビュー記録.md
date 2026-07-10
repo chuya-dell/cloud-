@@ -1,3 +1,9 @@
+---
+theme: Skeeter Rabbit 日本インタビュー記録（1999年来日時）
+status: reference
+tags: [ダンス, Popping, Skeeter Rabbit, 日本, 1999]
+---
+
 # Skeeter Rabbit 日本インタビュー記録（1999年）
 
 出典：Skeeter Rabbit of the Electric Boogaloos | Rare Interview in Japan (1999)

@@ -1,3 +1,10 @@
+---
+theme: Skeeter Rabbitと日本のダンスシーン記録2（九州編）
+status: reference
+tags: [ダンス, Popping, Skeeter Rabbit, 坂見誠二, OGS, 九州]
+related: ["ダンス/歴史/Skeeter_Rabbit_日本のダンスシーン記録", "ダンス/歴史/Skeeter_Rabbit_日本のダンスシーン記録3_ロボット論"]
+---
+
 # Skeeter Rabbitと日本のダンスシーン記録2（DANCE DIG UP・九州編）
 
 出典：YouTubeチャンネル「DANCE DIG UP」（前回動画の続編）

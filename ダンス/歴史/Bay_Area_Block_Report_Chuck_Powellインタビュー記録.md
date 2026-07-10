@@ -1,3 +1,9 @@
+---
+theme: Chuck Powellインタビュー（Bay Area Block Report、Turfingへの継承）
+status: reference
+tags: [ダンス, Popping, Boogaloo, Chuck Powell, Oakland]
+---
+
 # BAY AREA BLOCK REPORT：Chuck Powellインタビュー記録（Turfingへの継承）
 
 出典：BAY AREA BLOCK REPORT

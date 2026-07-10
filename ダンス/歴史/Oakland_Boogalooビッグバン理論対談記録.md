@@ -1,6 +1,13 @@
+---
+theme: Oakland Boogaloo「ビッグバン理論」対談記録
+status: reference
+tags: [ダンス, Popping, Boogaloo, Oakland, John Murphy]
+---
+
 # Oakland Boogaloo「ビッグバン理論」対談記録
 
-出典：対談動画（動画URL未特定 — 要補完）
+出典：対談動画
+https://www.youtube.com/watch?v=ARYZ8dVzliY
 ホスト：Otis Funkmeyer
 ゲスト：Playboy Stix
 題材：Black MessengersのChuck Powellの映像を見ながらの解説対談
@@ -50,5 +57,5 @@ Oaklandは黒人の権利主張・自衛を掲げたBlack Panther党の発祥地
 
 ## メモ
 - 「The Slot→Fresno」というムーブ名の変遷は、地名「Fresno」がスタイル名としても使われている可能性を示唆しており興味深い（要確認：一般的な "Fresno"という技名との関係）。
-- 本記録は前回保存した「POPPING_Boogaloo歴史簡介_中文版動画記録.md」（Chuck Powell自身の一次証言）と対をなす、より広い社会・政治的文脈からの二次解説・仮説提示のソース。両者を突き合わせると、Oakland発展史の解像度がかなり上がりそう。
+- 本記録は「POPPING_Boogaloo歴史簡介_中文版動画記録.md」（Chuck Powell自身の一次証言）と対をなす、より広い社会・政治的文脈からの二次解説・仮説提示のソース。両者を突き合わせると、Oakland発展史の解像度がかなり上がりそう。
 - Black Panther党やBay Areaカウンターカルチャーとの関連づけは、あくまでこの対談者2人の仮説（Big Bang Theory）であり、学術的に確立された定説ではない点に留意。

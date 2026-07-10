@@ -1,3 +1,9 @@
+---
+theme: BoogalooとPOPの包含関係・型への警鐘記録
+status: reference
+tags: [ダンス, Popping, Boogaloo, 坂見誠二, 理論]
+---
+
 # 「BoogalooとPOPの包含関係」「型へのこだわりへの警鐘」記録
 
 出典：YouTubeチャンネル「DANCE DIG UP」

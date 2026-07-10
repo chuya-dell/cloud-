@@ -1,3 +1,10 @@
+---
+theme: 大日本印刷（DNP） Deep Research企業分析
+status: reference
+tags: [就活, 大日本印刷, Deep Research]
+notion_url: https://app.notion.com/p/1ede390406d1801ba2daeee1c3e2b856
+---
+
 # dr 大日本印刷
 
 > Notion: https://app.notion.com/p/1ede390406d1801ba2daeee1c3e2b856  

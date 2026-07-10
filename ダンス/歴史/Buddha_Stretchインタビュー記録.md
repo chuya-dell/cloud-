@@ -1,3 +1,9 @@
+---
+theme: Buddha Stretchインタビュー（ヒップホップダンス vs ファンクスタイルズ）
+status: reference
+tags: [ダンス, ヒップホップ, Buddha Stretch, NY]
+---
+
 # Buddha Stretch インタビュー記録（ヒップホップダンス vs ファンクスタイルズ）
 
 出典：Buddha Stretchインタビュー（2010年3月6日収録、Part 1）

@@ -1,3 +1,9 @@
+---
+theme: Boogalooの韓国伝播・アジア/アメリカ気質論記録
+status: reference
+tags: [ダンス, Popping, Boogaloo, 坂見誠二, 韓国, KOGS]
+---
+
 # Lockin'とBoogalooは「ダンサーが作ったダンス」記録（韓国伝播・アジア/アメリカ気質論）
 
 出典：YouTubeチャンネル「DANCE DIG UP」

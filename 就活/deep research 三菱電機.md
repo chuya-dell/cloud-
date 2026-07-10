@@ -1,3 +1,11 @@
+---
+theme: 三菱電機 Deep Research企業分析
+status: reference
+tags: [就活, 三菱電機, Deep Research]
+notion_url: https://app.notion.com/p/287e390406d180eb86eaf0f972f6ec69
+related: ["就活/三菱電機", "就活/DR 三菱電機（詳細版）"]
+---
+
 # deep research 三菱電機
 
 > Notion: https://app.notion.com/p/287e390406d180eb86eaf0f972f6ec69  

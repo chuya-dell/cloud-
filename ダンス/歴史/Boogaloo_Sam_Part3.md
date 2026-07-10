@@ -1,3 +1,10 @@
+---
+theme: Boogaloo Samインタビュー Part3（ChinaFunk.cn、Fresno初期メンバー構成）
+status: reference
+tags: [ダンス, Popping, Boogaloo, Boogaloo Sam, Fresno]
+related: ["ダンス/歴史/Boogaloo_Sam_Part2_全文版", "ダンス/歴史/Boogaloo_Sam_Part4_全文版", "ダンス/歴史/Boogaloo_Sam_Part5_最終章"]
+---
+
 # Boogaloo Sam | ChinaFunk.cn Special Interview | Part 3
 
 出典：ChinaFunk.cn Special Interview Part 3

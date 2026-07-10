@@ -1,3 +1,11 @@
+---
+theme: パナソニックグループ事業会社分析（包括版）
+status: reference
+tags: [就活, パナソニック, Deep Research]
+notion_url: https://app.notion.com/p/1fae390406d180d6ab00ec1139d3ec2f
+related: ["就活/DR パナソニック株式会社"]
+---
+
 # DR パナソニックグループ事業会社分析
 
 > Notion: https://app.notion.com/p/1fae390406d180d6ab00ec1139d3ec2f  

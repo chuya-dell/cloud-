@@ -1,3 +1,10 @@
+---
+theme: 日立製作所 Deep Research企業分析
+status: reference
+tags: [就活, 日立製作所, Deep Research]
+notion_url: https://app.notion.com/p/1f9e390406d180f28c2aeb0bb55378ed
+---
+
 # DR 日立製作所
 
 > Notion: https://app.notion.com/p/1f9e390406d180f28c2aeb0bb55378ed  

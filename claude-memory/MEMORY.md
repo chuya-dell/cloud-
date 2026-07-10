@@ -1,3 +1,15 @@
+---
+name: ""
+metadata: 
+  node_type: memory
+  theme: Memory Index（claude-memoryの索引、常時更新）
+  status: active
+  tags: 
+    - 記憶
+    - インデックス
+  originSessionId: dd50376c-27b1-4e73-8e6f-5cd70daad5ae
+---
+
 # Memory Index
 
 ## 📋 Claude Code セッション開始ルール

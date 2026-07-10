@@ -1,3 +1,9 @@
+---
+theme: BRS（Boogaloo, Robottin & Struttin）ドキュメンタリー記録
+status: reference
+tags: [ダンス, Popping, Boogaloo, Robottin, Struttin, Bay Area, ドキュメンタリー]
+---
+
 # BRS: Boogaloo, Robottin & Struttin ドキュメンタリー記録
 
 出典：The Day B-4 Hip Hop Hit Northern California... (BRS Boogaloo Robottin & Struttin)

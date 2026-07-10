@@ -1,3 +1,10 @@
+---
+theme: パナソニックインダストリー Deep Research企業分析
+status: reference
+tags: [就活, パナソニック, Deep Research]
+notion_url: https://app.notion.com/p/1fae390406d1806cb789d70106d61ea1
+---
+
 # DR パナソニックインダストリー
 
 > Notion: https://app.notion.com/p/1fae390406d1806cb789d70106d61ea1

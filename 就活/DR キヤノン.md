@@ -1,3 +1,10 @@
+---
+theme: キヤノン Deep Research企業分析
+status: reference
+tags: [就活, キヤノン, Deep Research]
+notion_url: https://app.notion.com/p/1f7e390406d1807cbd0ad61dc8e76107
+---
+
 # DR キヤノン
 
 > Notion: https://app.notion.com/p/1f7e390406d1807cbd0ad61dc8e76107  

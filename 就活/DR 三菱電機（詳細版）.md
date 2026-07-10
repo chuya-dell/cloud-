@@ -1,3 +1,11 @@
+---
+theme: 三菱電機 Deep Research詳細分析（事業ポートフォリオ・戦略）
+status: reference
+tags: [就活, 三菱電機, Deep Research]
+notion_url: https://app.notion.com/p/1e5e390406d180a7a34fc85bc8afb693
+related: ["就活/三菱電機", "就活/deep research 三菱電機"]
+---
+
 # DR 三菱電機（詳細版）
 
 > Notion: https://app.notion.com/p/1e5e390406d180a7a34fc85bc8afb693  

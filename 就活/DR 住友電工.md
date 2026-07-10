@@ -1,3 +1,11 @@
+---
+theme: 住友電気工業 Deep Research企業分析
+status: reference
+tags: [就活, 住友電工, Deep Research]
+notion_url: https://app.notion.com/p/1e9e390406d1801898e3fd858cb3e1aa
+related: ["就活/住友電工"]
+---
+
 # DR 住友電工
 
 > Notion: https://app.notion.com/p/1e9e390406d1801898e3fd858cb3e1aa  

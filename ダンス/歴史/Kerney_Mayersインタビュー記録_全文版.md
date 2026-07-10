@@ -1,3 +1,10 @@
+---
+theme: Kerney Mayersインタビュー記録（全文文字起こしベース詳細版）
+status: reference
+tags: [ダンス, Popping, Boogaloo, Kerney Mayers, Oakland]
+related: ["ダンス/歴史/Kerney_Mayersインタビュー記録"]
+---
+
 # Boogaloo Traditions：Kerney Mayers インタビュー記録（全文文字起こしベース詳細版）
 
 出典：Boogaloo Traditions: Kerney Mayers (Black Messengers)

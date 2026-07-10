@@ -1,3 +1,10 @@
+---
+theme: NTT R&D Deep Research企業分析
+status: reference
+tags: [就活, NTT, Deep Research]
+notion_url: https://app.notion.com/p/211e390406d180618d1fc031aae8b40b
+---
+
 # DR NTT R&D
 
 > Notion: https://app.notion.com/p/211e390406d180618d1fc031aae8b40b

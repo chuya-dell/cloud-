@@ -1,6 +1,13 @@
+---
+theme: Skeeter Rabbit発言記録（Old Manチュートリアル）
+status: reference
+tags: [ダンス, Popping, Skeeter Rabbit, LA]
+---
+
 # Skeeter Rabbitの発言記録
 
-出典：インタビュー／ロケ映像（動画URL未特定 — 要補完）
+出典：LA Popping History Lesson and Oldman Tutorial with Skeeter Rabbit
+https://www.youtube.com/watch?v=9ieeSkpkGZ0&list=PLw-I8DV3D7-cU93kALAImNPgvSlXLG0L0&index=7
 話者：Skeeter Rabbit（Electric Boogaloos、Boogaloo Samのいとこ）
 
 ---
@@ -38,5 +45,5 @@
 ---
 
 ## メモ
-- Skeeter Rabbitの証言は「Poppingの発祥地はLAではなくロングビーチ（ソルトレイク通り）」という主張が核。Boogaloo Sam本人のインタビュー（フレズノ発祥、1975年）とは矛盾しないが、「ロングビーチで文化が本格的に育った」という补足的な位置づけとして整理する必要あり。
+- Skeeter Rabbitの証言は「Poppingの発祥地はLAではなくロングビーチ（ソルトレイク通り）」という主張が核。Boogaloo Sam本人のインタビュー（フレズノ発祥、1975年）とは矛盾しないが、「ロングビーチで文化が本格的に育った」という補足的な位置づけとして整理する必要あり。
 - VIP Recordsの店主Calの証言（別ソースがあれば）と合わせて記録すると当時の練習環境の解像度が上がりそう。

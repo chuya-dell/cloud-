@@ -1,3 +1,10 @@
+---
+theme: サムコ Deep Research企業分析
+status: reference
+tags: [就活, サムコ, Deep Research]
+notion_url: https://app.notion.com/p/1efe390406d180b2ac37eb1964b86e65
+---
+
 # DR サムコ
 
 > Notion: https://app.notion.com/p/1efe390406d180b2ac37eb1964b86e65  

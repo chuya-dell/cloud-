@@ -1,9 +1,17 @@
+---
+theme: Skeeter Rabbitと日本のダンスシーン記録3（ロボット表現論・David Bowieとの邂逅）
+status: reference
+tags: [ダンス, Popping, Skeeter Rabbit, 坂見誠二, OGS, 日本, ロボット]
+related: ["ダンス/歴史/Skeeter_Rabbit_日本のダンスシーン記録", "ダンス/歴史/Skeeter_Rabbit_日本のダンスシーン記録2_九州編"]
+---
+
 # Skeeter Rabbitと日本のダンスシーン記録3（ロボットの表現論・David Bowieとの邂逅）
 
-出典：YouTubeチャンネル「DANCE DIG UP」（動画URL未特定 — 要補完、既存記録の続編と思われる）
+出典：YouTubeチャンネル「DANCE DIG UP」（既存記録の続編）
+https://www.youtube.com/watch?v=pzGpNKoY89k&list=PLJocirZ-nERWjImmt2Y0VeoRa-meEm4xg&index=16
 出演：日本のダンサー（OGSメンバー等）による対談。坂見誠二氏（チェリー）を含む面々がSkeeter Rabbitから学んだロボット表現論、および彼の人生を変えたDavid Bowieとの邂逅について語る。
 
-※既存記録「Skeeter_Rabbit_日本のダンスシーン記録.md」「Skeeter_Rabbit_日本のダンスシーン記録2_九州編.md」の続編と思われる内容。ロボットスタイルの技術的な深さと、Skeeter Rabbitの人生観の背景が語られる重要なパート。
+※既存記録「Skeeter_Rabbit_日本のダンスシーン記録.md」「Skeeter_Rabbit_日本のダンスシーン記録2_九州編.md」の続編。ロボットスタイルの技術的な深さと、Skeeter Rabbitの人生観の背景が語られる重要なパート。
 
 ---
 
@@ -38,4 +46,3 @@
 ## メモ
 - Dime Stop/Hit/Dime Floating/Dime Shareという用語体系は、既存記録に登場した「Dime Stopping」（Bay Area系証言）とロボット表現の細分化を繋ぐ重要な技術的情報。Skeeter Rabbit自身がこれらをかなり体系立てて教えていたことが分かる。
 - David Bowieとの邂逅エピソードは、Electric Boogaloos史の中でもこれまでの記録に全く登場しなかった新情報。Skeeter Rabbitの人物像・思想背景を理解する上で貴重。
-- 本パートのURLは未確定のため、判明次第追記が必要。

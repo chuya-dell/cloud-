@@ -1,3 +1,9 @@
+---
+theme: Sacramentoダンス史対談記録（Air Posingの起源論争）
+status: reference
+tags: [ダンス, Popping, Sacramento, Air Posing]
+---
+
 # Sacramentoダンス史 対談記録（Otis Funkmeyer & Playboy Stix）
 
 出典：対談動画

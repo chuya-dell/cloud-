@@ -1,3 +1,9 @@
+---
+theme: JRockインタビュー（スタイル論・バトル審査基準）
+status: reference
+tags: [ダンス, Popping, JRock, 理論, バトル審査]
+---
+
 # JRock インタビュー記録（スタイル論・バトル審査基準）
 
 出典：JRockインタビュー（ヨーロッパ収録、2011年10月公開）

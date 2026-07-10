@@ -1,3 +1,9 @@
+---
+theme: No Bone Tyroneインタビュー（Compton/Pomonaのウェーブ史）
+status: reference
+tags: [ダンス, Popping, Waving, Compton, Pomona]
+---
+
 # No Bone Tyrone インタビュー記録（Compton/Pomonaのウェーブ史）
 
 出典：Funk In Focus Podcast「FIF Podcast: No Bone Tyrone w. PopN Marco」
