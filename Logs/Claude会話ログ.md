@@ -1,3 +1,11 @@
+---
+date: 2026-06-21
+theme: Claude会話ログ（PC環境等の転記アーカイブ）
+status: reference
+tags: [Claude, 会話ログ, アーカイブ]
+notion_url: https://app.notion.com/p/386e390406d181a298eef4243ce1e267
+---
+
 # Claude会話ログ
 
 > Notion: https://app.notion.com/p/386e390406d181a298eef4243ce1e267  

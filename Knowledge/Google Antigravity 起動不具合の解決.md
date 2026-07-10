@@ -1,3 +1,10 @@
+---
+date: 2026-06-30
+theme: Google Antigravity起動不具合の解決（GPUプロセスクラッシュ）
+status: resolved
+tags: [Antigravity, トラブルシューティング, GPU, Windows]
+---
+
 # Google Antigravity 起動不具合の解決
 
 **日付**: 2026-06-30

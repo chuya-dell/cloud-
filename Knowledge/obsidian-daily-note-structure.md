@@ -1,3 +1,10 @@
+---
+date: 2026-06-21
+theme: Obsidianの日記管理構造（フォルダ構成）
+status: reference
+tags: [Obsidian, フォルダ構成]
+---
+
 ## Obsidianの日記管理構造
 
 ### 概要

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Body/体・筋トレ管理.md",
+                "file": "Knowledge/windows-explorer-tips.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "体・筋トレ管理"
+              "title": "windows-explorer-tips"
             }
           }
         ]
@@ -166,7 +166,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 489.5
+    "width": 489.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,44 +182,44 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "7f5ba2ebf77f169e",
+  "active": "7cde80804a3b3f72",
   "lastOpenFiles": [
-    "ラボノート/260709_FDTD下に凸円柱Lumericalスクリプト検討.md",
-    "claude-memory/reference_gas_calendar_slack (1).md",
-    "claude-memory/reference_gas_calendar_slack.md",
-    "claude-memory/note_format_policy.md.tmp.19448.bc9f015f8f46",
-    "ラボノート/20260709_FDTD_NHA_d100_D230_round.md",
-    "タスク.md",
-    "Logs/Claude会話ログ.md.tmp.23864.ca9d37ef8b7e",
-    "Daily/2026-06-22.md.tmp.23864.61813566420e",
-    "ラボノート/260621_第6章PC×5-hmC検出結果_詳細データ.md",
-    "ラボノート/260621_第6章PC×5-hmC検出結果_詳細データ.md.tmp.23864.3c62936804b7",
-    "ラボノート/260622_ゼミ議論_DNA固定手法・データ解析.md",
-    "ラボノート/260622_ゼミ議論_DNA固定手法・データ解析.md.tmp.23864.c3c09b5d6471",
-    "Daily/2026-07-05.md",
-    "claude-memory/260709_PC容量整理_Cドライブ空き容量確保.md",
-    "claude-memory/reference_env_dell6f.md",
-    "claude-memory/note_format_policy.md",
-    "claude-memory/user_computers.md",
-    "claude-memory/user_profile.md",
-    "Knowledge/就活ES集（過去）.md",
-    "Knowledge/会話ログ自動構造化システム.md",
-    "ラボノート/260705_Antigravity解析フロー手順書 (2).md",
-    "Knowledge/接触転写によるピラー上部選択的DNA固定化検討.md",
-    "Knowledge/notion-app-troubleshooting.md",
-    "ラボノート/260707_pillar100nm_SAM吸着検出.md",
-    "Knowledge/obsidian-iphone-sync-remotely-save.md",
-    "Knowledge/obsidian-remotely-save-dropbox-setup.md",
-    "Knowledge/プロフィール・ルール.md",
-    "Knowledge/研究室PC環境構築手順.md",
+    "Daily/2026-06-23.md.tmp.19448.d21db5d07bde",
+    "Daily/2026-06-22.md.tmp.19448.7fb4aeb3d13b",
+    "Daily/2026-06-21.md.tmp.19448.3b0da20f94cb",
+    "Daily/2026-06-20.md.tmp.19448.46297932a62f",
+    "Knowledge/過去輪講・雑誌会メモ.md.tmp.19448.4bceaf1aab00",
+    "Knowledge/就活メモ（過去）.md.tmp.19448.e7d4e50915a6",
+    "Knowledge/就活ES集（過去）.md.tmp.19448.3748e9a2159d",
+    "Knowledge/master-thesis-plasmonic-crystal-5hmC.md.tmp.19448.b58307021811",
+    "Knowledge/notion-task-management-schema.md.tmp.19448.eb666a51a159",
+    "Knowledge/プラズモニック結晶_COPモールド仕様.md.tmp.19448.e58a35bcc7b5",
+    "Knowledge/windows-explorer-tips.md.tmp.19448.fc00884e8ef0",
+    "Knowledge/zotero-obsidian-sync-formats.md",
     "Knowledge/就活メモ（過去）.md",
-    "ラボノート/260625_検量線作成（デジタルカウント）.md",
-    "ラボノート/260703_SAM形成ヒートマップむら｜原因検討（2026-07-03）.md",
-    "ラボノート/260704_p200デザインナイフ位置合わせ検証.md.7bc7d8bd3bc64bcf2490735f92ef7eb3.tmp",
-    "ラボノート/260704_p200デザインナイフ位置合わせ検証.md.c76f81bdbb2db9d715e867d1eac4158d.tmp",
-    "claude-memory/MEMORY.md.2050c654cf7445d4f00cf5a1f792a973.tmp",
-    "ダンス/歴史/desktop.ini",
-    "desktop.ini",
+    "Knowledge/zotero-to-obsidian-flow.md",
+    "Knowledge/就活ES集（過去）.md",
+    "Knowledge/研究室PC環境構築手順.md",
+    "Knowledge/過去輪講・雑誌会メモ.md",
+    "Knowledge/process-logs-to-obsidian-system.md",
+    "Knowledge/pc-startup-batch-script.md",
+    "Knowledge/windows-explorer-tips.md",
+    "Knowledge/obsidian-vault-zotero-folder-structure.md",
+    "Knowledge/obsidian-vault-ai-integration-architecture.md",
+    "Knowledge/obsidian-daily-note-structure.md",
+    "Knowledge/notion-gpu-crash-solution.md",
+    "Knowledge/NotebookLMボイスメモ抽出（251211・260107・gm）.md",
+    "Knowledge/mcp-obsidian-vault-troubleshooting.md",
+    "Knowledge/Mac環境構築手順.md",
+    "Knowledge/Keychron_B11_Pro_キーマップ検討.md",
+    "Knowledge/google-calendar-operation-rules.md",
+    "Knowledge/conversation-auto-save-architecture.md",
+    "Knowledge/claude-desktop-window-management.md",
+    "Knowledge/claude-web-vs-code-comparison.md",
+    "Daily/2026-06-26.md",
+    "Daily/2026-06-30.md",
+    "Daily/2026-07-05.md",
+    "Body/体・筋トレ管理.md",
     "無題のファイル.canvas"
   ]
 }

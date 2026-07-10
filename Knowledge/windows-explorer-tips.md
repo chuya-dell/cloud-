@@ -1,3 +1,10 @@
+---
+date: 2026-06-20
+theme: Windowsエクスプローラーのアドレスバー操作
+status: reference
+tags: [Windows, Tips]
+---
+
 ## Windowsエクスプローラーのアドレスバー操作
 
 ### 概要

@@ -1,3 +1,11 @@
+---
+date: 2026-06-20
+theme: Claude Web と Claude Code の機能比較（会話自動保存対応状況）
+status: reference
+tags: [Claude, Claude Code, 比較]
+related: ["Knowledge/conversation-auto-save-architecture"]
+---
+
 ## Claude Web と Claude Code の機能比較
 
 ### 概要

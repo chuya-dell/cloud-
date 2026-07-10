@@ -1,3 +1,10 @@
+---
+date: 2026-06-21
+theme: Keychron B11 Pro キーマップ検討（IME切り替え割り当て）
+status: open（購入検討中・要検証）
+tags: [Keychron, キーボード, キーマップ]
+---
+
 # Keychron B11 Pro キーマップ検討（IME切り替え割り当て）
 
 > Notion: https://app.notion.com/p/386e390406d181a298eef4243ce1e267 （📝 Claude会話ログより転記）

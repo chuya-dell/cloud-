@@ -1,3 +1,11 @@
+---
+date: 2026-06-21
+theme: Mac環境構築手順（Claude Code環境の複製）
+status: reference
+tags: [Mac, PC環境構築, Claude Code]
+related: ["Knowledge/研究室PC環境構築手順"]
+---
+
 # Mac環境構築手順
 
 このPCと同じClaude Code環境をMacに作る手順。

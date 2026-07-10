@@ -1,3 +1,11 @@
+---
+date: 2026-06-21
+theme: Notion タスク管理DBスキーマ設計
+status: resolved
+tags: [Notion, タスク管理, スキーマ設計]
+related: ["Knowledge/task-priority-framework"]
+---
+
 ## Notion タスク管理 DB スキーマ設計
 
 ### 概要

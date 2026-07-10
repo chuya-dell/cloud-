@@ -1,3 +1,9 @@
+---
+date: 2026-07-01
+theme: Cometブラウザ起動不具合の解決（GPUサンドボックス相性問題）
+status: resolved
+tags: [Comet, トラブルシューティング, GPU, Windows]
+---
 
 # Comet ブラウザ 起動不具合の解決
 

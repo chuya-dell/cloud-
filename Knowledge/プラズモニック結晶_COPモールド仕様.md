@@ -1,3 +1,11 @@
+---
+date: 2026-06-24
+theme: プラズモニック結晶 COPモールド仕様
+status: reference
+tags: [プラズモニック結晶, COPモールド, FDTD]
+related: ["Knowledge/master-thesis-plasmonic-crystal-5hmC"]
+---
+
 # プラズモニック結晶 COPモールド仕様
 
 ## ピラー型モールド

@@ -1,3 +1,11 @@
+---
+date: 2026-06-21
+theme: ObsidianとNotionの用途別比較
+status: reference
+tags: [Obsidian, Notion, 比較]
+related: ["Knowledge/notion-obsidian-role-design"]
+---
+
 ## ObsidianとNotionの用途別比較
 
 ### 概要
