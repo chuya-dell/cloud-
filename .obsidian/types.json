@@ -4,6 +4,7 @@
     "cssclasses": "multitext",
     "tags": "tags",
     "date": "date",
+    "updated": "date",
     "theme": "text",
     "status": "text",
     "related": "multitext",

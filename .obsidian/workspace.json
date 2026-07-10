@@ -160,6 +160,20 @@
               "icon": "bot",
               "title": "Claudian"
             }
+          },
+          {
+            "id": "708ee027872b06ab",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "すべてのプロパティ"
+            }
           }
         ],
         "currentTab": 4
@@ -184,6 +198,8 @@
   },
   "active": "7cde80804a3b3f72",
   "lastOpenFiles": [
+    "Body/体・筋トレ管理.md.tmp.372.a82eb0285136",
+    "Mistakes/ミス記録.md.tmp.372.27d09d1a350e",
     "Daily/2026-06-23.md.tmp.19448.d21db5d07bde",
     "Daily/2026-06-22.md.tmp.19448.7fb4aeb3d13b",
     "Daily/2026-06-21.md.tmp.19448.3b0da20f94cb",
@@ -193,8 +209,6 @@
     "Knowledge/就活ES集（過去）.md.tmp.19448.3748e9a2159d",
     "Knowledge/master-thesis-plasmonic-crystal-5hmC.md.tmp.19448.b58307021811",
     "Knowledge/notion-task-management-schema.md.tmp.19448.eb666a51a159",
-    "Knowledge/プラズモニック結晶_COPモールド仕様.md.tmp.19448.e58a35bcc7b5",
-    "Knowledge/windows-explorer-tips.md.tmp.19448.fc00884e8ef0",
     "Knowledge/zotero-obsidian-sync-formats.md",
     "Knowledge/就活メモ（過去）.md",
     "Knowledge/zotero-to-obsidian-flow.md",
