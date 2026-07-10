@@ -37,6 +37,13 @@
 3. `Mistakes/Mistakes.md` を読んで同じミスを繰り返さない
 4. `Daily/` フォルダの最新ファイルで前回の作業内容を把握
 
+## 🔒 憲法: frontmatter必須ルール（2026-07-10制定、例外なし）
+
+**Obsidian Vault内にファイルを新規作成する場合、フォルダを問わず必ずYAML frontmatterを付与する。** 「軽いメモだから後で」は禁止（2026-07-09のボルト整理でKnowledge 137件→61件・Decision 58件→29件の重複統合が発生した反省による）。
+
+最低限のキー: `date` / `theme`（一行要約） / `status` / `tags`。詳細は `claude-memory/note_format_policy.md` 参照。
+手動作成時はTemplates/フォルダのテンプレート（`note-template.md`・Daily用は`daily-template.md`）が自動適用される設定済み。
+
 ## セッション中・終了時に必ずやること
 
 - **Daily**: 今日やったことを `Daily/YYYY-MM-DD.md` に記録
@@ -66,11 +73,13 @@
 
 | 内容 | 保存先 |
 |---|---|
-| 作業ログ・今日の記録 | `Daily/YYYY-MM-DD.md` に追記 |
-| 知識・調査メモ・解決法 | `Knowledge/` に新規ファイル |
-| 重要な決定・方針 | `Decision/` に新規ファイル |
+| 作業ログ・今日の記録 | `Daily/YYYY-MM-DD.md` に追記（新規作成時はfrontmatter必須） |
+| 知識・調査メモ・解決法 | `Knowledge/` に新規ファイル（frontmatter必須） |
+| 重要な決定・方針 | `Decision/` に新規ファイル（frontmatter必須） |
 | AIのミス・指摘 | `Mistakes/Mistakes.md` に追記 |
 | 論文関連 | `Zotero/` 参照 |
+
+すべての新規ファイルはfrontmatter必須（上記「🔒 憲法」参照）。
 
 ## Notion 書き込みルール
 
