@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>残り時間 - 院試カウントダウン</title>
+<meta name="description" content="2026年8月19日9:00 院試カウントダウン。現実を突きつける非情なタイマー。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans+JP:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-black:#0D0D0D;
+    --bg-panel:#1A1A1A;
+    --red:#FF0033;
+    --yellow:#FFE600;
+  }
+  *{box-sizing:border-box;}
+  html,body{
+    margin:0;
+    padding:0;
+    background:var(--bg-black);
+    color:#EDEDED;
+    font-family:'Noto Sans JP',"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+  body{
+    min-height:100vh;
+    background-image:
+      radial-gradient(ellipse at center, rgba(255,0,51,0.06) 0%, rgba(13,13,13,0) 60%),
+      repeating-linear-gradient(0deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px, transparent 1px, transparent 3px);
+    position:relative;
+  }
+  body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    box-shadow: inset 0 0 0 0 rgba(255,0,51,0);
+    z-index:40;
+    transition:box-shadow .6s ease;
+  }
+  body.critical::after{
+    animation:critical-pulse 1.6s ease-in-out infinite;
+  }
+  @keyframes critical-pulse{
+    0%,100%{ box-shadow: inset 0 0 40px 6px rgba(255,0,51,0.15); }
+    50%{ box-shadow: inset 0 0 90px 20px rgba(255,0,51,0.4); }
+  }
+
+  .digital{
+    font-family:'Dela Gothic One','Impact',sans-serif;
+    letter-spacing:0.02em;
+  }
+
+  /* Header warning marquee */
+  #warning-banner{
+    position:fixed;
+    top:0; left:0; right:0;
+    z-index:50;
+    background:var(--red);
+    border-bottom:4px solid var(--yellow);
+    overflow:hidden;
+    box-shadow:0 0 20px rgba(255,0,51,0.6);
+  }
+  .marquee-viewport{
+    overflow:hidden;
+    width:100%;
+  }
+  .marquee-track{
+    display:flex;
+    width:max-content;
+    animation:marquee-scroll 18s linear infinite;
+    white-space:nowrap;
+  }
+  @keyframes marquee-scroll{
+    from{ transform:translateX(0); }
+    to{ transform:translateX(-50%); }
+  }
+  .marquee-item{
+    color:#0D0D0D;
+    font-weight:900;
+    font-size:clamp(0.85rem, 2.4vw, 1.35rem);
+    padding:0.55rem 2.5rem;
+    letter-spacing:0.05em;
+  }
+
+  /* Countdown */
+  #countdown-timer{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:0.6rem;
+    max-width:1000px;
+    margin:0 auto;
+  }
+  @media (max-width:640px){
+    #countdown-timer{ grid-template-columns:repeat(2,1fr); gap:0.9rem; }
+  }
+  .time-block{
+    background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.3));
+    border:2px solid #2A2A2A;
+    border-top:2px solid var(--red);
+    padding:0.8rem 0.4rem 1rem;
+    position:relative;
+  }
+  .time-value{
+    font-size:clamp(2.6rem, 9vw, 6.5rem);
+    line-height:1;
+    color:#fff;
+    text-shadow:0 0 12px rgba(255,0,51,0.55), 0 0 2px rgba(255,255,255,0.4);
+  }
+  .time-label{
+    margin-top:0.5rem;
+    font-size:clamp(0.65rem, 1.6vw, 0.95rem);
+    color:var(--yellow);
+    letter-spacing:0.25em;
+    font-weight:700;
+  }
+
+  .taunt-message{
+    font-family:'Dela Gothic One',sans-serif;
+    font-size:clamp(1.15rem, 3.4vw, 2.1rem);
+    line-height:1.5;
+    color:var(--yellow);
+    text-shadow:0 0 10px rgba(255,230,0,0.3);
+    min-height:4.5em;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:0 0.5rem;
+  }
+
+  .section-title{
+    font-family:'Dela Gothic One',sans-serif;
+    font-size:clamp(1rem, 2.6vw, 1.4rem);
+    color:var(--red);
+    letter-spacing:0.15em;
+    border-left:6px solid var(--red);
+    padding-left:0.6rem;
+    margin-bottom:1rem;
+  }
+
+  .reality-box{
+    background:var(--bg-panel);
+    border:1px solid #2A2A2A;
+    padding:1.4rem;
+  }
+
+  .progress-bar-outer{
+    width:100%;
+    height:1.6rem;
+    background:#0D0D0D;
+    border:1px solid #333;
+    position:relative;
+    overflow:hidden;
+  }
+  .progress-bar-inner{
+    height:100%;
+    width:0%;
+    background:repeating-linear-gradient(135deg, var(--red) 0 10px, #b3001f 10px 20px);
+    transition:width 1s linear;
+  }
+
+  #stay-timer{
+    font-family:'Dela Gothic One',sans-serif;
+    font-size:clamp(2rem, 6vw, 3.2rem);
+    color:var(--red);
+    text-shadow:0 0 10px rgba(255,0,51,0.5);
+  }
+
+  #close-button{
+    font-family:'Dela Gothic One',sans-serif;
+    background:var(--red);
+    color:#0D0D0D;
+    border:none;
+    padding:1.1rem 2.2rem;
+    font-size:clamp(1rem, 2.6vw, 1.3rem);
+    letter-spacing:0.1em;
+    cursor:pointer;
+    box-shadow:0 0 25px rgba(255,0,51,0.5);
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  #close-button:hover{
+    background:var(--yellow);
+    transform:scale(1.03);
+    box-shadow:0 0 35px rgba(255,230,0,0.6);
+  }
+  #close-button:active{ transform:scale(0.97); }
+
+  #close-overlay{
+    position:fixed;
+    inset:0;
+    background:#0D0D0D;
+    z-index:100;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:2rem;
+  }
+  #close-overlay p{
+    font-family:'Dela Gothic One',sans-serif;
+    color:var(--red);
+    font-size:clamp(1.6rem, 6vw, 3.4rem);
+    text-shadow:0 0 30px rgba(255,0,51,0.7);
+  }
+
+  #exam-final-message{
+    display:none;
+    font-family:'Dela Gothic One',sans-serif;
+    color:var(--yellow);
+    font-size:clamp(1.3rem, 3.4vw, 2rem);
+    text-align:center;
+    line-height:1.7;
+    max-width:900px;
+    margin:2rem auto 0;
+    text-shadow:0 0 12px rgba(255,230,0,0.35);
+  }
+
+  footer.legal{
+    text-align:center;
+    color:#555;
+    font-size:0.7rem;
+    letter-spacing:0.1em;
+    padding:2rem 1rem 3rem;
+  }
+</style>
+</head>
+<body>
+
+<div id="warning-banner">
+  <div class="marquee-viewport">
+    <div class="marquee-track" id="marquee-track"></div>
+  </div>
+</div>
+
+<main class="pt-16 md:pt-20 px-4 pb-10 max-w-5xl mx-auto">
+
+  <section class="text-center mt-8 md:mt-14">
+    <p class="digital" style="color:var(--red); font-size:clamp(0.9rem,2.6vw,1.3rem); letter-spacing:0.3em;">院試まで残り</p>
+
+    <div id="countdown-timer" class="mt-4">
+      <div class="time-block">
+        <div class="time-value digital" id="val-days">00</div>
+        <div class="time-label">DAYS / 日</div>
+      </div>
+      <div class="time-block">
+        <div class="time-value digital" id="val-hours">00</div>
+        <div class="time-label">HOURS / 時間</div>
+      </div>
+      <div class="time-block">
+        <div class="time-value digital" id="val-mins">00</div>
+        <div class="time-label">MIN / 分</div>
+      </div>
+      <div class="time-block">
+        <div class="time-value digital" id="val-secs">00</div>
+        <div class="time-label">SEC / 秒</div>
+      </div>
+    </div>
+
+    <div id="taunt-message" class="taunt-message mt-8 md:mt-10"></div>
+  </section>
+
+  <section id="exam-final-message"></section>
+
+  <section class="mt-14 md:mt-20" id="reality-section">
+    <p class="section-title">現実を直視しろ</p>
+
+    <div class="grid gap-6 md:grid-cols-2">
+      <div class="reality-box">
+        <h2 class="digital" style="font-size:1rem; color:#fff; letter-spacing:0.08em;">真の残り勉強時間</h2>
+        <p style="font-size:0.75rem; color:#888; margin-top:0.4rem;">睡眠7h・食事風呂3hを除いた実質稼働14h/日で算出</p>
+        <div class="progress-bar-outer mt-4">
+          <div id="study-progress-bar" class="progress-bar-inner"></div>
+        </div>
+        <p class="mt-3" style="font-size:0.8rem; color:#aaa;">本日の残り可動時間</p>
+        <p id="today-study-hours" class="digital" style="color:var(--yellow); font-size:1.6rem;"></p>
+        <p class="mt-3" style="font-size:0.8rem; color:#aaa;">試験日までの真の残り学習時間（総計）</p>
+        <p id="total-study-hours" class="digital" style="color:var(--red); font-size:1.6rem;"></p>
+      </div>
+
+      <div class="reality-box">
+        <h2 class="digital" style="font-size:1rem; color:#fff; letter-spacing:0.08em;">滞在時間カウンター</h2>
+        <p style="font-size:0.75rem; color:#888; margin-top:0.4rem;">このページを見ている＝勉強していない時間</p>
+        <p id="stay-timer" class="mt-4">00:00</p>
+        <p id="stay-message" class="mt-3" style="font-size:0.85rem; color:var(--yellow); line-height:1.6;"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-center mt-14 md:mt-20 pb-6">
+    <button id="close-button">今すぐ閉じて勉強する</button>
+  </section>
+
+  <footer class="legal">TARGET: 2026-08-19 09:00 JST — この画面はあなたを甘やかしません。</footer>
+</main>
+
+<div id="close-overlay">
+  <p>遅い。今すぐ参考書を開け。</p>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- Constants ---------- */
+  var TARGET_MS = new Date("2026-08-19T09:00:00+09:00").getTime();
+  var EXAM_JST = { year: 2026, month: 7, date: 19 }; // month is 0-indexed (7 = August)
+  var DAY_MS = 86400000;
+
+  var pad2 = function(n){ return String(n).padStart(2, "0"); };
+
+  /* ---------- Warning marquee ---------- */
+  (function initMarquee(){
+    var text = "[WARNING] あなたの志望校の合格枠は増えません";
+    var track = document.getElementById("marquee-track");
+    var block = "";
+    for (var i = 0; i < 8; i++) {
+      block += '<span class="marquee-item">' + text + '</span>';
+    }
+    track.innerHTML = block + block; // duplicated for seamless -50% loop
+  })();
+
+  /* ---------- Taunt message pools ---------- */
+  function tauntsGeneral(daysLeft){
+    return [
+      "『まだ" + daysLeft + "日ある』と思ったあなた、過去問は何年分解きましたか？",
+      "サイトを更新しても残り時間は増えませんよ。",
+      "全落ちした後の言い訳、もう考え始めていますか？",
+      "今日も「明日から本気出す」と言うつもりですか？",
+      "その一息、何分続けるつもりですか？",
+      "隣の受験生は今この瞬間も問題を解いています。あなたは？",
+      "志望校のレベルを下げる相談、そろそろ準備しておいた方がいいのでは？",
+      "不合格通知に書く言い訳、もう用意してありますか？"
+    ];
+  }
+  function tauntsUrgent(daysLeft){
+    return [
+      "残り" + daysLeft + "日。今から何冊終わらせるつもりですか？",
+      "もう後がありません。気づいていますか？",
+      "今さら基礎に戻っても間に合いません。今ある武器で戦いなさい。",
+      "他の受験生はラストスパートをかけています。あなたは何をしていますか？",
+      "「間に合わせる」ではなく「間に合わなかった」現実がすぐそこです。"
+    ];
+  }
+  function tauntsCritical(daysLeft){
+    return [
+      "あと" + daysLeft + "日。今更何をしても劇的には変わりません。今ある力を固めなさい。",
+      "言い訳を考える時間があるなら、1問でも多く解きなさい。",
+      "泣いても喚いても試験は待ってくれません。",
+      "後悔は試験が終わってからいくらでもできます。今は手を動かしなさい。"
+    ];
+  }
+  var TAUNT_EXAM_DAY_EARLY = [
+    "本日が本番です。悪あがきより体調管理に切り替えなさい。",
+    "今から詰め込んだものは、今日の答案には反映されません。"
+  ];
+  var TAUNT_EXAM_MORNING_FIXED = "今さら焦っても過去のあなたのサボりは消えません。腹を括りなさい。";
+  var TAUNT_EXAM_STARTED_FIXED = "09:00 - 試験開始。積み重ねてきたもの（またはサボってきた成果）をそのまま答案に書いてきなさい。";
+
+  var currentPool = [];
+  var tauntIndex = 0;
+  var tauntEl = document.getElementById("taunt-message");
+
+  function pickPool(daysLeft){
+    if (daysLeft <= 3) return tauntsCritical(daysLeft);
+    if (daysLeft <= 14) return tauntsUrgent(daysLeft);
+    return tauntsGeneral(daysLeft);
+  }
+
+  function renderTaunt(){
+    if (!currentPool.length) return;
+    tauntEl.textContent = currentPool[tauntIndex % currentPool.length];
+    tauntIndex++;
+  }
+
+  setInterval(renderTaunt, 4500);
+
+  /* ---------- JST time helpers ---------- */
+  function getJSTParts(nowMs){
+    var jst = new Date(nowMs + 9 * 3600000);
+    return {
+      year: jst.getUTCFullYear(),
+      month: jst.getUTCMonth(),
+      date: jst.getUTCDate(),
+      hours: jst.getUTCHours(),
+      minutes: jst.getUTCMinutes()
+    };
+  }
+  function isExamDayJST(parts){
+    return parts.year === EXAM_JST.year && parts.month === EXAM_JST.month && parts.date === EXAM_JST.date;
+  }
+
+  /* ---------- Study time reality check ---------- */
+  var progressBar = document.getElementById("study-progress-bar");
+  var todayStudyEl = document.getElementById("today-study-hours");
+  var totalStudyEl = document.getElementById("total-study-hours");
+
+  function formatHM(hoursFloat){
+    var totalMin = Math.max(0, Math.round(hoursFloat * 60));
+    var h = Math.floor(totalMin / 60);
+    var m = totalMin % 60;
+    return h + "時間" + m + "分";
+  }
+
+  function computeStudyTime(nowMs, diffMs){
+    var nowDate = new Date(nowMs);
+    var startOfToday = new Date(nowDate.getFullYear(), nowDate.getMonth(), nowDate.getDate()).getTime();
+    var hoursElapsedToday = (nowMs - startOfToday) / 3600000;
+    var studyHoursElapsedToday = Math.min(14, hoursElapsedToday * (14 / 24));
+    var realHoursRemainingTotal = diffMs / 3600000;
+
+    var studyHoursRemainingToday = Math.max(0, Math.min(14 - studyHoursElapsedToday, realHoursRemainingTotal));
+
+    var startOfTomorrow = startOfToday + DAY_MS;
+    var examDate = new Date(TARGET_MS);
+    var examMidnight = new Date(examDate.getFullYear(), examDate.getMonth(), examDate.getDate()).getTime();
+    var fullDaysBetween = Math.max(0, Math.floor((examMidnight - startOfTomorrow) / DAY_MS));
+
+    var totalRemainingStudyHours = Math.min(studyHoursRemainingToday + fullDaysBetween * 14, realHoursRemainingTotal);
+    var progressFraction = Math.min(1, Math.max(0, 1 - (studyHoursRemainingToday / 14)));
+
+    return {
+      studyHoursRemainingToday: studyHoursRemainingToday,
+      totalRemainingStudyHours: Math.max(0, totalRemainingStudyHours),
+      progressFraction: progressFraction
+    };
+  }
+
+  /* ---------- Stay-time counter (persisted via localStorage) ---------- */
+  var STAY_KEY = "examCountdown_totalStayMs_v1";
+  var sessionStart = Date.now();
+  var storedTotalMs = parseInt(localStorage.getItem(STAY_KEY) || "0", 10);
+  if (isNaN(storedTotalMs)) storedTotalMs = 0;
+
+  var stayTimerEl = document.getElementById("stay-timer");
+  var stayMessageEl = document.getElementById("stay-message");
+
+  function persistStay(){
+    var total = storedTotalMs + (Date.now() - sessionStart);
+    localStorage.setItem(STAY_KEY, String(total));
+  }
+  setInterval(persistStay, 5000);
+  window.addEventListener("beforeunload", persistStay);
+  window.addEventListener("pagehide", persistStay);
+
+  function updateStayTimer(){
+    var totalMs = storedTotalMs + (Date.now() - sessionStart);
+    var totalSec = Math.floor(totalMs / 1000);
+    var mm = Math.floor(totalSec / 60);
+    var ss = totalSec % 60;
+    stayTimerEl.textContent = pad2(mm) + ":" + pad2(ss);
+
+    var words = Math.floor(totalMs / 15000); // 1 word per 15s of idling here
+    stayMessageEl.textContent = "このサイトを見ている時間＝無駄にした時間。ライバルは既に単語を" + words + "個暗記し終えています。";
+  }
+
+  /* ---------- Exam-started terminal state ---------- */
+  var timerInterval = null;
+  var stayInterval = null;
+  var hasFinished = false;
+
+  function enterExamStartedState(){
+    if (hasFinished) return;
+    hasFinished = true;
+    if (timerInterval) clearInterval(timerInterval);
+
+    ["val-days", "val-hours", "val-mins", "val-secs"].forEach(function(id){
+      document.getElementById(id).textContent = "00";
+    });
+
+    tauntEl.style.display = "none";
+    document.getElementById("reality-section").style.display = "none";
+
+    var finalEl = document.getElementById("exam-final-message");
+    finalEl.style.display = "block";
+    finalEl.textContent = TAUNT_EXAM_STARTED_FIXED;
+
+    var btn = document.getElementById("close-button");
+    btn.disabled = true;
+    btn.textContent = "試験開始 - もう遅い";
+    btn.style.opacity = "0.4";
+    btn.style.cursor = "not-allowed";
+
+    document.body.classList.remove("critical");
+    document.title = "試験開始 - 院試カウントダウン";
+    localStorage.setItem("examCountdown_hasStarted_v1", "1");
+  }
+
+  /* ---------- Main tick ---------- */
+  var pageVisible = true;
+
+  function tick(){
+    var now = Date.now();
+    var diff = TARGET_MS - now;
+
+    if (diff <= 0) {
+      enterExamStartedState();
+      return;
+    }
+
+    var totalSec = Math.floor(diff / 1000);
+    var days = Math.floor(totalSec / 86400);
+    var hours = Math.floor((totalSec % 86400) / 3600);
+    var mins = Math.floor((totalSec % 3600) / 60);
+    var secs = totalSec % 60;
+
+    document.getElementById("val-days").textContent = pad2(days);
+    document.getElementById("val-hours").textContent = pad2(hours);
+    document.getElementById("val-mins").textContent = pad2(mins);
+    document.getElementById("val-secs").textContent = pad2(secs);
+
+    document.body.classList.toggle("critical", diff < DAY_MS);
+
+    if (pageVisible) {
+      document.title = "残" + days + "日" + pad2(hours) + ":" + pad2(mins) + ":" + pad2(secs) + " 院試まで";
+    }
+
+    /* taunt message selection */
+    var jstParts = getJSTParts(now);
+    var onExamDay = isExamDayJST(jstParts);
+
+    if (onExamDay && jstParts.hours >= 6 && jstParts.hours < 9) {
+      currentPool = [TAUNT_EXAM_MORNING_FIXED];
+    } else if (onExamDay) {
+      currentPool = TAUNT_EXAM_DAY_EARLY;
+    } else {
+      currentPool = pickPool(days);
+    }
+    if (tauntEl.textContent === "" ) renderTaunt();
+
+    /* reality check */
+    var study = computeStudyTime(now, diff);
+    progressBar.style.width = (study.progressFraction * 100).toFixed(1) + "%";
+    todayStudyEl.textContent = formatHM(study.studyHoursRemainingToday);
+    totalStudyEl.textContent = formatHM(study.totalRemainingStudyHours);
+
+    updateStayTimer();
+  }
+
+  timerInterval = setInterval(tick, 1000);
+  tick();
+  renderTaunt();
+
+  /* ---------- Visibility change: tab title shaming ---------- */
+  document.addEventListener("visibilitychange", function(){
+    pageVisible = !document.hidden;
+    if (document.hidden) {
+      document.title = "[!] 逃げたな？戻れ";
+    }
+  });
+
+  /* ---------- Close button interaction ---------- */
+  document.getElementById("close-button").addEventListener("click", function(){
+    if (hasFinished) return;
+    var overlay = document.getElementById("close-overlay");
+    overlay.style.display = "flex";
+    persistStay();
+
+    setTimeout(function(){
+      window.close();
+      // If the tab is still alive after this point, closing failed — blank it out.
+      setTimeout(function(){
+        document.documentElement.innerHTML = "";
+        document.documentElement.style.background = "#FFFFFF";
+      }, 400);
+    }, 1000);
+  });
+
+})();
+</script>
+</body>
+</html>
